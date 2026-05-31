@@ -913,6 +913,26 @@ footer a:hover {
     }
 }
 
+/* Home page mobile alignment */
+@media (max-width: 767.98px) {
+    .lead-attorney-copy {
+        text-align: center;
+    }
+
+    .lead-attorney-copy .d-flex {
+        justify-content: center;
+    }
+
+    .feature-card {
+        text-align: center;
+    }
+
+    .feature-card .feature-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* ===========================
    Animations - Modern
    =========================== */
@@ -1607,7 +1627,54 @@ article p {
     padding-left: 0.5rem;
 }
 
+/* Google Translate Widget */
+.translate-widget {
+    min-width: 150px;
+}
+
+.translate-widget .goog-te-gadget {
+    font-family: inherit;
+    font-size: 0;
+}
+
+.translate-widget .goog-te-gadget-simple {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 38px;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background-color: #ffffff;
+    box-shadow: var(--shadow-sm);
+}
+
+.translate-widget .goog-te-gadget-simple span {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.translate-widget img {
+    display: none;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
 /* Lead Attorney Section Enhancements */
+.lead-attorney-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .lead p:first-of-type {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -1687,6 +1754,15 @@ article p {
 
     .navbar-brand {
         font-size: 1.2rem;
+    }
+
+    .translate-widget {
+        width: 100%;
+    }
+
+    .translate-widget .goog-te-gadget-simple {
+        justify-content: center;
+        width: 100%;
     }
 
     .accordion-button {
