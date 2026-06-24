@@ -2488,9 +2488,9 @@ body {
 
 .sample-hero-title {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(2.75rem, 6vw, 5.5rem);
+    font-size: clamp(2.25rem, 4.8vw, 4.25rem);
     font-weight: 800;
-    line-height: 1.02;
+    line-height: 1.08;
     letter-spacing: 0;
     color: #0f172a;
 }
@@ -2501,10 +2501,10 @@ body {
 }
 
 .sample-hero-copy {
-    max-width: 620px;
+    max-width: 590px;
     color: #385066;
-    font-size: 1.13rem;
-    line-height: 1.8;
+    font-size: 1.02rem;
+    line-height: 1.7;
 }
 
 .sample-action-row {
@@ -2518,8 +2518,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 48px;
-    padding: 0 1.35rem;
+    min-height: 44px;
+    padding: 0 1.2rem;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 800;
@@ -2578,7 +2578,7 @@ body {
 }
 
 .sample-section {
-    padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+    padding: clamp(3rem, 5vw, 4.75rem) 0;
 }
 
 .sample-section-title {
@@ -2617,17 +2617,25 @@ body {
 .sample-blue-band {
     background: rgba(0, 117, 193, 0.9);
     color: #ffffff;
+    padding: clamp(3rem, 5vw, 4.5rem) 0;
 }
 
 .sample-blue-band * {
     color: #ffffff;
 }
 
+.sample-blue-band .btn-light {
+    color: rgba(0, 117, 193, 0.95) !important;
+    min-width: 190px;
+    border: 0;
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+}
+
 .sample-hero-b {
     position: relative;
     overflow: hidden;
     background: #ffffff;
-    padding: clamp(3.8rem, 7vw, 6.5rem) 0;
+    padding: clamp(3.25rem, 6vw, 5.25rem) 0;
 }
 
 .sample-hero-b::before {
@@ -2653,7 +2661,7 @@ body {
 }
 
 .sample-stat {
-    padding: 1.1rem;
+    padding: 0.95rem;
     border: 1px solid rgba(0, 117, 193, 0.14);
     border-radius: 8px;
     background: #ffffff;
@@ -2663,7 +2671,7 @@ body {
 .sample-stat strong {
     display: block;
     color: rgba(0, 117, 193, 0.9);
-    font-size: 1.7rem;
+    font-size: 1.45rem;
     line-height: 1;
 }
 
@@ -2676,7 +2684,7 @@ body {
 
 .sample-photo-card img {
     width: 100%;
-    min-height: 440px;
+    min-height: 390px;
     object-fit: cover;
     object-position: center;
 }
@@ -2711,20 +2719,20 @@ body {
    Homepage Vision Section
    =========================== */
 .vision-section {
-    padding: clamp(4rem, 7vw, 6.25rem) 0;
+    padding: clamp(3.25rem, 5.6vw, 5rem) 0;
     background: #ffffff;
 }
 
 .vision-heading-wrap {
     text-align: center;
-    margin-bottom: clamp(3rem, 5vw, 4.5rem);
+    margin-bottom: clamp(2.4rem, 4vw, 3.5rem);
 }
 
 .vision-title {
     margin: 0;
     color: rgba(0, 117, 193, 0.95);
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 4.6rem);
+    font-size: clamp(2.25rem, 4vw, 3.6rem);
     font-weight: 800;
     line-height: 1;
     letter-spacing: 0.02em;
@@ -2734,7 +2742,7 @@ body {
     display: block;
     width: 76px;
     height: 3px;
-    margin: 3.2rem auto 0;
+    margin: 2rem auto 0;
     background: #dddddd;
 }
 
@@ -2750,32 +2758,32 @@ body {
 
 .vision-image {
     display: block;
-    width: min(26vw, 335px);
-    height: min(26vw, 335px);
-    min-width: 250px;
-    min-height: 250px;
-    margin: 0 auto 2.35rem;
+    width: min(22vw, 270px);
+    height: min(22vw, 270px);
+    min-width: 210px;
+    min-height: 210px;
+    margin: 0 auto 1.65rem;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
 
 .vision-card h3 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.15rem;
     color: #050505;
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1.45rem, 2vw, 1.9rem);
+    font-size: clamp(1.3rem, 1.7vw, 1.62rem);
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0;
 }
 
 .vision-card p {
-    max-width: 520px;
+    max-width: 430px;
     margin: 0 auto;
     color: #455363;
-    font-size: clamp(1.05rem, 1.45vw, 1.35rem);
-    line-height: 1.55;
+    font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+    line-height: 1.65;
     letter-spacing: 0;
 }
 
@@ -2784,7 +2792,7 @@ body {
    =========================== */
 .practice-focus-section {
     position: relative;
-    padding: clamp(4rem, 7vw, 6rem) 0;
+    padding: clamp(3.25rem, 5.6vw, 5rem) 0;
     background:
         linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
     border-top: 1px solid #e7eef4;
@@ -2811,31 +2819,31 @@ body {
 }
 
 .practice-focus-title {
-    max-width: 760px;
+    max-width: 680px;
     margin: 0;
     color: #0f172a;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(2.25rem, 5vw, 4.9rem);
+    font-size: clamp(2rem, 4vw, 3.85rem);
     font-weight: 800;
-    line-height: 1.05;
+    line-height: 1.08;
     letter-spacing: 0;
 }
 
 .practice-focus-copy {
-    max-width: 560px;
+    max-width: 500px;
     margin: 0;
     color: #475569;
-    font-size: clamp(1.05rem, 1.5vw, 1.28rem);
-    line-height: 1.75;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    line-height: 1.65;
 }
 
 .practice-focus-card {
     position: relative;
     display: flex;
-    min-height: 330px;
+    min-height: 285px;
     height: 100%;
     flex-direction: column;
-    padding: 1.55rem;
+    padding: 1.35rem;
     color: #0f172a;
     text-decoration: none;
     background: #ffffff;
@@ -2862,16 +2870,16 @@ body {
 }
 
 .practice-focus-icon {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.25rem;
     color: #ffffff;
     background: rgba(0, 117, 193, 0.9);
     border-radius: 8px;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 .practice-focus-label {
@@ -2879,7 +2887,7 @@ body {
     margin-bottom: 0.9rem;
     color: #0f172a;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 800;
     line-height: 1.2;
 }
@@ -2887,8 +2895,8 @@ body {
 .practice-focus-text {
     display: block;
     color: #526173;
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.96rem;
+    line-height: 1.65;
 }
 
 .practice-focus-link {
@@ -2896,7 +2904,7 @@ body {
     align-items: center;
     gap: 0.55rem;
     margin-top: auto;
-    padding-top: 1.75rem;
+    padding-top: 1.35rem;
     color: rgba(0, 117, 193, 0.95);
     font-weight: 800;
 }
@@ -2937,15 +2945,15 @@ body {
 .contact-footer {
     background: #f5f5f5 !important;
     color: #404854 !important;
-    padding: clamp(3rem, 6vw, 4.75rem) 0 !important;
+    padding: clamp(2.75rem, 5vw, 4rem) 0 !important;
     border-top: 0 !important;
 }
 
 .contact-footer h2 {
-    margin-bottom: 2.35rem;
+    margin-bottom: 1.8rem;
     color: #050505 !important;
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1.65rem, 2vw, 2rem);
+    font-size: clamp(1.45rem, 1.7vw, 1.75rem);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0;
@@ -2960,13 +2968,13 @@ body {
 .footer-hours-block p,
 .hours-list {
     color: #404854 !important;
-    font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
     line-height: 1.55;
     letter-spacing: 0;
 }
 
 .footer-contact-block p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-footer a {
@@ -2999,7 +3007,7 @@ body {
 }
 
 .legal-advice {
-    margin-top: 2.6rem;
+    margin-top: 2rem;
 }
 
 .legal-advice p {
