@@ -2707,6 +2707,305 @@ body {
     text-decoration: none;
 }
 
+/* ===========================
+   Homepage Vision Section
+   =========================== */
+.vision-section {
+    padding: clamp(4rem, 7vw, 6.25rem) 0;
+    background: #ffffff;
+}
+
+.vision-heading-wrap {
+    text-align: center;
+    margin-bottom: clamp(3rem, 5vw, 4.5rem);
+}
+
+.vision-title {
+    margin: 0;
+    color: rgba(0, 117, 193, 0.95);
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.6rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.vision-divider {
+    display: block;
+    width: 76px;
+    height: 3px;
+    margin: 3.2rem auto 0;
+    background: #dddddd;
+}
+
+.vision-grid {
+    align-items: start;
+}
+
+.vision-card {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vision-image {
+    display: block;
+    width: min(26vw, 335px);
+    height: min(26vw, 335px);
+    min-width: 250px;
+    min-height: 250px;
+    margin: 0 auto 2.35rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vision-card h3 {
+    margin-bottom: 2rem;
+    color: #050505;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.45rem, 2vw, 1.9rem);
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+
+.vision-card p {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #455363;
+    font-size: clamp(1.05rem, 1.45vw, 1.35rem);
+    line-height: 1.55;
+    letter-spacing: 0;
+}
+
+/* ===========================
+   Homepage Practice Focus
+   =========================== */
+.practice-focus-section {
+    position: relative;
+    padding: clamp(4rem, 7vw, 6rem) 0;
+    background:
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    border-top: 1px solid #e7eef4;
+    border-bottom: 1px solid #e7eef4;
+}
+
+.practice-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 117, 193, 0.95);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.practice-kicker::before {
+    content: '';
+    width: 42px;
+    height: 2px;
+    background: rgba(0, 117, 193, 0.95);
+}
+
+.practice-focus-title {
+    max-width: 760px;
+    margin: 0;
+    color: #0f172a;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.25rem, 5vw, 4.9rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: 0;
+}
+
+.practice-focus-copy {
+    max-width: 560px;
+    margin: 0;
+    color: #475569;
+    font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+    line-height: 1.75;
+}
+
+.practice-focus-card {
+    position: relative;
+    display: flex;
+    min-height: 330px;
+    height: 100%;
+    flex-direction: column;
+    padding: 1.55rem;
+    color: #0f172a;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #d8e8f2;
+    border-radius: 8px;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.practice-focus-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border-top: 4px solid rgba(0, 117, 193, 0.9);
+    pointer-events: none;
+}
+
+.practice-focus-card:hover {
+    color: #0f172a;
+    transform: translateY(-6px);
+    border-color: rgba(0, 117, 193, 0.32);
+    box-shadow: 0 26px 52px rgba(15, 23, 42, 0.12);
+}
+
+.practice-focus-icon {
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+    color: #ffffff;
+    background: rgba(0, 117, 193, 0.9);
+    border-radius: 8px;
+    font-size: 1.35rem;
+}
+
+.practice-focus-label {
+    display: block;
+    margin-bottom: 0.9rem;
+    color: #0f172a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.practice-focus-text {
+    display: block;
+    color: #526173;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.practice-focus-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: auto;
+    padding-top: 1.75rem;
+    color: rgba(0, 117, 193, 0.95);
+    font-weight: 800;
+}
+
+.practice-focus-link i {
+    transition: transform 0.2s ease;
+}
+
+.practice-focus-card:hover .practice-focus-link i {
+    transform: translateX(4px);
+}
+
+.practice-focus-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+    color: #475569;
+    font-weight: 600;
+}
+
+.practice-focus-note a {
+    color: rgba(0, 117, 193, 0.95);
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 117, 193, 0.25);
+}
+
+.practice-focus-note a:hover {
+    border-bottom-color: rgba(0, 117, 193, 0.95);
+}
+
+/* ===========================
+   Contact Footer
+   =========================== */
+.contact-footer {
+    background: #f5f5f5 !important;
+    color: #404854 !important;
+    padding: clamp(3rem, 6vw, 4.75rem) 0 !important;
+    border-top: 0 !important;
+}
+
+.contact-footer h2 {
+    margin-bottom: 2.35rem;
+    color: #050505 !important;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.65rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.footer-contact-block,
+.footer-hours-block {
+    text-align: center;
+}
+
+.footer-contact-block p,
+.footer-hours-block p,
+.hours-list {
+    color: #404854 !important;
+    font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+    line-height: 1.55;
+    letter-spacing: 0;
+}
+
+.footer-contact-block p {
+    margin-bottom: 2rem;
+}
+
+.contact-footer a {
+    color: #0075c1 !important;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.contact-footer a:hover {
+    color: #005f9d !important;
+    text-decoration: underline;
+    transform: none;
+}
+
+.hours-list {
+    display: inline-grid;
+    gap: 0.45rem;
+    text-align: left;
+}
+
+.hours-list div {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    gap: 0.6rem;
+    align-items: baseline;
+}
+
+.hours-list .active {
+    font-weight: 800;
+}
+
+.legal-advice {
+    margin-top: 2.6rem;
+}
+
+.legal-advice p {
+    margin-bottom: 0.45rem;
+}
+
 @media (max-width: 991.98px) {
     .sample-header-inner {
         min-height: auto;
@@ -2744,6 +3043,23 @@ body {
         opacity: 0.1;
         width: 80vw;
     }
+
+    .vision-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .practice-focus-copy {
+        max-width: 100%;
+    }
+
+    .practice-focus-card {
+        min-height: 300px;
+    }
+
+    .contact-footer h2 {
+        margin-bottom: 1.35rem;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -2754,6 +3070,47 @@ body {
     .sample-url-pill {
         width: 100%;
         justify-content: center;
+    }
+
+    .vision-heading-wrap {
+        margin-bottom: 2.5rem;
+    }
+
+    .vision-divider {
+        margin-top: 1.75rem;
+    }
+
+    .vision-image {
+        width: 230px;
+        height: 230px;
+        min-width: 230px;
+        min-height: 230px;
+        margin-bottom: 1.5rem;
+    }
+
+    .vision-card h3 {
+        margin-bottom: 1rem;
+    }
+
+    .practice-focus-card {
+        min-height: auto;
+    }
+
+    .practice-focus-note {
+        justify-content: flex-start;
+    }
+
+    .footer-contact-block,
+    .footer-hours-block {
+        text-align: left;
+    }
+
+    .hours-list {
+        width: 100%;
+    }
+
+    .hours-list div {
+        grid-template-columns: 2.9rem 1fr;
     }
 }
 

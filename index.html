@@ -9,544 +9,238 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="sample-page">
 
-    <!-- Home Header -->
-    <header class="home-header">
-        <div class="container-fluid">
-            <div class="home-header-inner">
-                <a class="home-brand" href="index.html" aria-label="BG Laws home">
-                    <span class="home-logo-crop">
-                        <img src="./images/Bg.PNG" alt="">
-                    </span>
-                    <span>BG Laws</span>
-                </a>
-
-                <nav class="home-nav" aria-label="Main navigation">
-                    <a class="home-nav-link active" href="index.html">Home</a>
-                    <a class="home-nav-link" href="about.html">About</a>
-                    <div class="home-nav-item">
-                        <a class="home-nav-link" href="laws.html">Practice Areas</a>
-                        <div class="home-dropdown">
-                            <div>
-                                <h6>Services for Individuals</h6>
-                                <a href="civil-law.html">Civil Litigation</a>
-                                <a href="immigration.html">Immigration</a>
-                                <a href="criminal-law.html">Crime & Investigations</a>
-                                <a href="real-estate.html">Residential Property Conveyancing</a>
-                                <a href="labor-law.html">Employment & Work</a>
-                            </div>
-                            <div>
-                                <h6>Services for Businesses</h6>
-                                <a href="corporate-law.html">Corporate</a>
-                                <a href="labor-law.html">Employment Law</a>
-                                <a href="criminal-law.html">Regulatory Offences / Investigations</a>
-                                <a href="real-estate.html">Commercial Property & Real Estate</a>
-                                <a href="civil-law.html">Litigation & Dispute Resolution</a>
-                            </div>
-                            <div>
-                                <h6>Services for Charities</h6>
-                                <a href="civil-law.html">Charity Disputes</a>
-                                <a href="constitutional-law.html">Defending Injunctions</a>
-                                <a href="administrative-law.html">Obtaining Injunctions</a>
-                                <a href="laws.html">Unlawful Expulsion</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="home-nav-link" href="contact.html">Contact</a>
-                </nav>
-
-                <div id="google_translate_element" class="translate-widget home-translate"></div>
+    <!-- BG Laws Header -->
+    <header>
+        <div class="bgl-topbar py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="bgl-social d-flex align-items-center gap-3">
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="bgl-quicklinks">
+                    <a href="about.html">About Us</a>
+                    <a href="about.html">Meet the Team</a>
+                </div>
             </div>
         </div>
+
+        <div class="bgl-main-header py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="d-flex align-items-center text-decoration-none" href="index.html" aria-label="BG Laws home">
+                    <img src="./images/Bg.PNG" alt="BG Laws" class="bgl-logo-image">
+                </a>
+                <div class="d-flex align-items-center gap-4 flex-wrap">
+                    <div>
+                        <div class="bgl-phone-label">For advice and support</div>
+                        <a class="bgl-phone" href="tel:6473029946">647 302 9946</a>
+                    </div>
+                    <a class="bgl-contact-btn" href="contact.html">CONTACT US</a>
+                    <div id="google_translate_element" class="translate-widget"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bgl-nav-wrap" aria-label="Service navigation">
+            <div class="container">
+                <ul class="bgl-service-nav">
+                    <li class="bgl-service-item">
+                        <a class="bgl-service-link" href="laws.html">Services for Individuals <i class="fas fa-caret-down"></i></a>
+                        <div class="bgl-dropdown">
+                            <a href="civil-law.html">Civil Litigation <i class="fas fa-chevron-right"></i></a>
+                            <a href="immigration.html">Immigration <i class="fas fa-chevron-right"></i></a>
+                            <a href="criminal-law.html">Crime & Investigations <i class="fas fa-chevron-right"></i></a>
+                            <a href="real-estate.html">Residential Property Conveyancing <i class="fas fa-chevron-right"></i></a>
+                            <a href="labor-law.html">Employment & Work <i class="fas fa-chevron-right"></i></a>
+                            <a href="administrative-law.html">Administrative Law <i class="fas fa-chevron-right"></i></a>
+                            <a href="constitutional-law.html">Constitutional Law <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="bgl-service-item">
+                        <a class="bgl-service-link" href="corporate-law.html">Services for Businesses <i class="fas fa-caret-down"></i></a>
+                        <div class="bgl-dropdown">
+                            <a href="labor-law.html">Employment Law</a>
+                            <a href="immigration.html">Immigration</a>
+                            <a href="corporate-law.html">Corporate <i class="fas fa-chevron-right"></i></a>
+                            <a href="criminal-law.html">Regulatory Offences / Investigations <i class="fas fa-chevron-right"></i></a>
+                            <a href="real-estate.html">Commercial Property & Real Estate</a>
+                            <a href="civil-law.html">Litigation & Dispute Resolution <i class="fas fa-chevron-right"></i></a>
+                            <a href="laws.html">Insolvency</a>
+                        </div>
+                    </li>
+                    <li class="bgl-service-item">
+                        <a class="bgl-service-link" href="laws.html">Services for Charities <i class="fas fa-caret-down"></i></a>
+                        <div class="bgl-dropdown">
+                            <a href="civil-law.html">Charity Disputes</a>
+                            <a href="constitutional-law.html">Defending Injunctions</a>
+                            <a href="administrative-law.html">Obtaining Injunctions</a>
+                            <a href="laws.html">Unlawful Expulsion</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section with Background Image -->
-    <section class="hero-section" style="background-image: url('./images/khushdeep-37.jpg'); background-size: cover; background-position: 79% 35%; min-height: 550px; display: flex; align-items: center;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold text-white mb-3">Legal Expertise You Can Rely On</h1>
-                    <p class="lead text-white mb-4">At BG Laws, we help individuals, families, and businesses navigate complex legal issues with clarity and confidence.</p>
-                    <div class="d-flex gap-3">
-                        <a href="contact.html" class="btn btn-light btn-lg px-4">Schedule Free Consultation</a>
-                        <a href="laws.html" class="btn btn-outline-light btn-lg px-4">Explore Services</a>
+    <main>
+        <section class="sample-hero-b">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="sample-eyebrow mb-3">Ontario legal counsel</div>
+                        <h1 class="sample-hero-title mb-4">LEGAL EXPERTISE <span>YOU CAN RELY ON</span></h1>
+                        <p class="sample-hero-copy mb-3">At BG Laws, we help individuals, families, and businesses navigate complex legal issues with clarity and confidence.</p>
+                        <p class="sample-hero-copy mb-3">Our lawyers bring real courtroom experience and deep knowledge in Immigration, Criminal Defence, and Real Estate Law.</p>
+                        <p class="sample-hero-copy mb-4">We focus on practical advice, strong advocacy, and personal attention to every client.</p>
+                        <div class="sample-action-row mb-4">
+                            <a href="contact.html" class="sample-primary-btn">Start Your Case</a>
+                            <a href="laws.html" class="sample-secondary-btn">Explore Services</a>
+                        </div>
+                        <div class="sample-stats-grid">
+                            <div class="sample-stat"><strong>3</strong><span class="text-muted">Core practice areas</span></div>
+                            <div class="sample-stat"><strong>24h</strong><span class="text-muted">Response goal</span></div>
+                            <div class="sample-stat"><strong>4</strong><span class="text-muted">Client languages</span></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lead Attorney Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-4 text-center">
-                    <img src="./images/khushdeep-57.jpg" alt="Lead Attorney" class="img-fluid rounded-circle shadow-lg lead-attorney-photo">
-                </div>
-                <div class="col-lg-8 lead-attorney-copy">
-                    <h2 class="display-5 fw-bold text-dark mb-3">Your Legal Attorney</h2>
-                    <p class="lead fw-bold text-primary mb-3">Harmanjeet Singh Bal, Esq.</p>
-                    <p class="text-muted mb-3">Harman Bal brings real courtroom experience and practical advice to clients facing immigration, criminal defence, real estate, and litigation matters.</p>
-                    <p class="text-muted mb-4">We focus on practical advice, strong advocacy, and personal attention to every client, with service available in English, Punjabi, Hindi, and Urdu.</p>
-                    <div class="d-flex gap-3">
-                        <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
-                        <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What Sets Us Apart Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">What Sets Us Apart</h2>
-                <p class="lead text-muted">We combine deep legal expertise with a client-first approach</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-award text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Award Winning</h4>
-                        <p class="text-muted">Recognized for excellence in legal practice and client satisfaction across multiple practice areas.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-handshake text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Client Focused</h4>
-                        <p class="text-muted">Your goals are our goals. We prioritize clear communication and transparent billing practices.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-gavel text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Expert Team</h4>
-                        <p class="text-muted">Seasoned attorneys with specialized expertise across multiple practice areas.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-clock text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Fast Response</h4>
-                        <p class="text-muted">We respond promptly to your inquiries and keep you updated every step of the way.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-shield-alt text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Confidential</h4>
-                        <p class="text-muted">Your privacy and attorney-client privilege are protected with utmost care.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card h-100 p-4 bg-light rounded-4 border-0">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-lightbulb text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Strategic Solutions</h4>
-                        <p class="text-muted">Customized legal strategies designed specifically for your unique circumstances.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Legal Services Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">Our Legal Services</h2>
-                <p class="lead text-muted">Comprehensive legal expertise across multiple practice areas</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-landmark text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Immigration Law</h4>
-                        <p class="text-muted">Work permits, visitor visas, permanent residence, citizenship, refugee claims, appeals, and Federal Court matters.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-balance-scale text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Criminal Defence</h4>
-                        <p class="text-muted">Bail hearings, DUI, refusal charges, assault, sexual assault, harassment, robbery, theft, mischief, and fraud defence.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-handshake text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Real Estate Law</h4>
-                        <p class="text-muted">Residential and commercial purchases, sales, refinancing, title transfers, and investment property transactions.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-briefcase text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">LMIA & Work Permits</h4>
-                        <p class="text-muted">Employer-supported LMIA applications, high-wage and low-wage work permits, and spousal open work permits.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-home text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Permanent Residence</h4>
-                        <p class="text-muted">Express Entry, PNP, family sponsorships, H&C applications, regional programs, and PR card renewals.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-users text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Refugee & Protection</h4>
-                        <p class="text-muted">Refugee claims, protected-person PR applications, PRRA, travel documents, and related protection matters.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card text-center p-5 bg-white rounded-4 shadow-sm border-0">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-globe text-primary fa-3x"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-3">Immigration Law</h4>
-                        <p class="text-muted">Comprehensive immigration services including work permits, permanent residence, and citizenship.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">Frequently Asked Questions</h2>
-                <p class="lead text-muted">Find answers to common questions about our services</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item border-0 shadow-sm mb-3 rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    What should I do if I'm facing legal charges?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Contact our office immediately. The sooner we can begin working on your case, the better we can protect your rights. Our attorneys are available for emergency consultations.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 shadow-sm mb-3 rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    How much will legal representation cost?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    We offer transparent fee structures tailored to your situation. Many matters are handled on contingency or with flat fees. We'll discuss costs during your initial consultation.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 shadow-sm mb-3 rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Do you offer free initial consultations?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Yes! We offer free initial consultations to assess your case and discuss how we can help. Call or schedule online today to book your appointment.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 shadow-sm mb-3 rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    What areas of law do you specialize in?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    We focus on Immigration Law, Criminal Defence, and Real Estate Law, with support for related appeals, hearings, litigation, and enforcement matters.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 shadow-sm mb-3 rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    How do I know if I need a lawyer?
-                                </button>
-                            </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    If you're facing any legal issue, it's usually wise to consult with an attorney. We can assess your situation and advise whether representation is necessary.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 shadow-sm rounded-3">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                                    Can you handle cases outside the local area?
-                                </button>
-                            </h2>
-                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Yes. We have experience with cases in multiple jurisdictions and can refer you to trusted colleagues if needed. Contact us to discuss your specific situation.
-                                </div>
+                    <div class="col-lg-6">
+                        <div class="sample-photo-card">
+                            <img src="./images/khushdeep-89.jpg" alt="BG Laws consultation">
+                            <div class="sample-photo-caption">
+                                <strong>Personal attention, practical direction.</strong>
+                                <p class="mb-0 text-muted">Designed for clients who need calm, organized legal support.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">What Our Clients Say</h2>
-                <p class="lead text-muted">Real feedback from clients we've helped</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm border-0 h-100">
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="testimonial-text mb-4 text-muted">"Exceptional legal guidance and representation. The team went above and beyond to resolve my case successfully. Highly recommended!"</p>
-                        <div class="d-flex align-items-center">
-                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=50&h=50&fit=crop" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-0 fw-bold text-dark">Sarah Johnson</h6>
-                                <small class="text-muted">Corporate Client</small>
-                            </div>
+        <section class="vision-section">
+            <div class="container">
+                <div class="vision-heading-wrap">
+                    <h2 class="vision-title">OUR VISION</h2>
+                    <span class="vision-divider"></span>
+                </div>
+                <div class="row g-5 vision-grid">
+                    <div class="col-lg-4">
+                        <div class="vision-card">
+                            <img src="./images/khushdeep-37.jpg" alt="Legal documents and certificates" class="vision-image">
+                            <h3>Law You Can Understand</h3>
+                            <p>We know that legal action can sometimes be overwhelming. We are dedicated to providing you help in language that you can understand. If you don't feel like you understand your options, just ask, and we will work to find an explanation that works for you.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm border-0 h-100">
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="testimonial-text mb-4 text-muted">"Professional, knowledgeable, and truly cared about achieving the best outcome. I felt confident with them handling my case."</p>
-                        <div class="d-flex align-items-center">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-0 fw-bold text-dark">Michael Rodriguez</h6>
-                                <small class="text-muted">Legal Client</small>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="vision-card">
+                            <img src="./images/khushdeep-57.jpg" alt="BG Laws lawyers" class="vision-image">
+                            <h3>A Focus on Results</h3>
+                            <p>The first step is for us to work with you and come up with a plan to get the results you need. Through our understanding of the law and your understanding of the circumstances, we will craft a path to success.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm border-0 h-100">
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="testimonial-text mb-4 text-muted">"Outstanding representation from start to finish. They explained everything clearly and kept me informed throughout the process."</p>
-                        <div class="d-flex align-items-center">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-0 fw-bold text-dark">Emily Chen</h6>
-                                <small class="text-muted">Satisfied Client</small>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="vision-card">
+                            <img src="./images/khushdeep-39.jpg" alt="BG Laws office" class="vision-image">
+                            <h3>Get Started Today</h3>
+                            <p>Don't wait! Let us help you figure out your best next steps are. The sooner you have a plan of action, the better your chances of taking the correct steps to get the results you want.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certifications Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">Board Certifications & Professional Affiliations</h2>
-                <p class="lead text-muted">Recognized credentials and professional memberships</p>
+        <section class="practice-focus-section">
+            <div class="container">
+                <div class="row align-items-end g-4 mb-5">
+                    <div class="col-lg-7">
+                        <span class="practice-kicker">Focused legal services</span>
+                        <h2 class="practice-focus-title">Choose the right legal path for your matter.</h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="practice-focus-copy">BG Laws focuses on the areas where clients often need fast judgment, careful documents, and strong representation.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <a href="immigration.html" class="practice-focus-card">
+                            <span class="practice-focus-icon"><i class="fas fa-passport"></i></span>
+                            <span class="practice-focus-label">Immigration Law</span>
+                            <span class="practice-focus-text">Applications, appeals, work permits, sponsorships, refugee matters, and status issues.</span>
+                            <span class="practice-focus-link">View services <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="criminal-law.html" class="practice-focus-card">
+                            <span class="practice-focus-icon"><i class="fas fa-scale-balanced"></i></span>
+                            <span class="practice-focus-label">Criminal Defence</span>
+                            <span class="practice-focus-text">Bail hearings, charges, investigations, disclosure review, negotiations, and trial defence.</span>
+                            <span class="practice-focus-link">View services <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="real-estate.html" class="practice-focus-card">
+                            <span class="practice-focus-icon"><i class="fas fa-house-chimney"></i></span>
+                            <span class="practice-focus-label">Real Estate Law</span>
+                            <span class="practice-focus-text">Purchases, sales, refinancing, title transfers, closing documents, and property review.</span>
+                            <span class="practice-focus-link">View services <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="practice-focus-note">
+                    <span>Not sure where your issue fits?</span>
+                    <a href="contact.html">Speak with BG Laws</a>
+                </div>
             </div>
-            <div class="row g-4 align-items-center justify-content-center">
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4">
-                        <i class="fas fa-certificate text-primary fa-4x mb-3"></i>
-                        <h5 class="fw-bold text-dark">State Bar Certified</h5>
-                        <p class="text-muted">Licensed in all state and federal courts</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4">
-                        <i class="fas fa-award text-primary fa-4x mb-3"></i>
-                        <h5 class="fw-bold text-dark">ABA Member</h5>
-                        <p class="text-muted">American Bar Association</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4">
-                        <i class="fas fa-shield-alt text-primary fa-4x mb-3"></i>
-                        <h5 class="fw-bold text-dark">Top Rated</h5>
-                        <p class="text-muted">Rated 5/5 for excellence</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="p-4">
-                        <i class="fas fa-star text-primary fa-4x mb-3"></i>
-                        <h5 class="fw-bold text-dark">Peer Recognized</h5>
-                        <p class="text-muted">Recognized by peers and clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold mb-3">Ready to Get Started?</h2>
-                    <p class="lead mb-0">Schedule your free consultation today and learn how we can help you navigate your legal challenges.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a href="contact.html" class="btn btn-light btn-lg px-5">Contact Us Now</a>
-                </div>
+        <section class="sample-section sample-blue-band">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Getting the Right Results!</h2>
+                <p class="lead mb-4">Over 23 years of expertise in<br>Legal Profession.</p>
+                <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold">Contact Us</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Blog/News Section -->
-    <section class="py-5 bg-light">
+    <footer class="contact-footer">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-dark mb-3">Latest Legal News & Insights</h2>
-                <p class="lead text-muted">Stay informed about important legal developments</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="news-card bg-white rounded-4 shadow-sm overflow-hidden border-0">
-                        <img src="./images/khushdeep-57.jpg" alt="News" class="w-100" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <small class="text-primary fw-bold"><i class="fas fa-calendar me-2"></i>February 2026</small>
-                            <h5 class="fw-bold text-dark mt-2 mb-2">Immigration Applications Need Strong Evidence</h5>
-                            <p class="text-muted mb-3">Work permits, sponsorships, refugee claims, and PR applications all depend on complete forms and persuasive documents.</p>
-                            <a href="immigration.html" class="btn btn-sm btn-outline-primary">Read More</a>
+            <div class="row justify-content-center g-5">
+                <div class="col-lg-5">
+                    <div class="footer-contact-block">
+                        <h2>BG Laws</h2>
+                        <p>2, 81 Zenway Blvd, Woodbridge, Vaughan, ON L4H<br>0S5</p>
+                        <p>
+                            Tel: <a href="tel:+16473029946">+ 1 (647) -302-9946</a><br>
+                            Fax: <a href="tel:+19056486111">(905) 648 6111</a><br>
+                            Email: <a href="mailto:hbal@bglaws.ca">hbal@bglaws.ca</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="footer-hours-block">
+                        <h2>Hours</h2>
+                        <div class="hours-list">
+                            <div><span>Mon</span><span>09:00 a.m. - 06:00 p.m.</span></div>
+                            <div><span>Tue</span><span>09:00 a.m. - 06:00 p.m.</span></div>
+                            <div class="active"><span>Wed</span><span>09:00 a.m. - 06:00 p.m.</span></div>
+                            <div><span>Thu</span><span>09:00 a.m. - 06:00 p.m.</span></div>
+                            <div><span>Fri</span><span>09:00 a.m. - 06:00 p.m.</span></div>
+                            <div><span>Sat</span><span>By Appointment</span></div>
+                            <div><span>Sun</span><span>Closed</span></div>
+                        </div>
+                        <div class="legal-advice">
+                            <p>For Legal Advice:</p>
+                            <p>Call: +1 (647) 302 9946</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="news-card bg-white rounded-4 shadow-sm overflow-hidden border-0">
-                        <img src="./images/khushdeep-57.jpg" alt="News" class="w-100" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <small class="text-primary fw-bold"><i class="fas fa-calendar me-2"></i>January 2026</small>
-                            <h5 class="fw-bold text-dark mt-2 mb-2">Charged or Under Investigation?</h5>
-                            <p class="text-muted mb-3">Early criminal defence advice can protect your rights before bail, police statements, disclosure review, or trial decisions.</p>
-                            <a href="criminal-law.html" class="btn btn-sm btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="news-card bg-white rounded-4 shadow-sm overflow-hidden border-0">
-                        <img src="./images/khushdeep-57.jpg" alt="News" class="w-100" style="height: 250px; object-fit: cover;">
-                        <div class="p-4">
-                            <small class="text-primary fw-bold"><i class="fas fa-calendar me-2"></i>December 2025</small>
-                            <h5 class="fw-bold text-dark mt-2 mb-2">Buying, Selling, or Refinancing Property</h5>
-                            <p class="text-muted mb-3">Real estate transactions move quickly. Lawyer review helps protect title, financing, closing, and document accuracy.</p>
-                            <a href="real-estate.html" class="btn btn-sm btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="background-color: rgba(0, 117, 193, 0.9); color: #e2e8f0;" class="py-5">
-        <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">BG Laws</h5>
-                    <p style="color: #cbd5e0;">Professional legal services dedicated to helping you navigate complex legal matters with confidence.</p>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Home</a></li>
-                        <li><a href="about.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">About</a></li>
-                        <li><a href="laws.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Practice Areas</a></li>
-                        <li><a href="contact.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="immigration.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Immigration Law</a></li>
-                        <li><a href="criminal-law.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Criminal Defence</a></li>
-                        <li><a href="real-estate.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Real Estate Law</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Contact</h5>
-                    <p class="mb-2" style="color: #cbd5e0;"><i class="fas fa-phone me-2"></i>647-302-9946</p>
-                    <p class="mb-2" style="color: #cbd5e0;"><i class="fas fa-envelope me-2"></i>info@bglaws.ca</p>
-                    <p class="mb-3" style="color: #cbd5e0;"><i class="fas fa-map-marker-alt me-2"></i>81 Zenway Blvd, Unit 2, Woodbridge, ON, L4H 0S5</p>
-                    <div class="d-flex gap-2">
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr style="border-color: rgba(255, 255, 255, 0.2);">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0" style="color: #cbd5e0;">&copy; 2026 BG Laws. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" style="color: #cbd5e0;" class="text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" style="color: #cbd5e0;" class="text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->    <script>
+    <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
@@ -560,9 +254,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
