@@ -2715,6 +2715,19 @@ body {
     transform: translateX(-50%);
 }
 
+.home1-page .sample-hero-b::after {
+    content: '';
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    width: min(360px, 35vw);
+    height: min(360px, 35vw);
+    background: url('../images/Bg.PNG') center/contain no-repeat;
+    opacity: 0.12;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
 .sample-hero-b .container {
     position: relative;
     z-index: 1;
@@ -2739,6 +2752,338 @@ body {
     max-width: 420px;
     height: auto;
     margin: 0 auto;
+}
+
+.home1-page .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 117, 193, 0.95);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home1-page .vision-copy {
+    max-width: 560px;
+    margin-top: 1.25rem;
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.home1-page .about-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home1-page .about-list div {
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 117, 193, 0.12);
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.home1-page .about-list strong {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(0, 117, 193, 0.95);
+}
+
+.home1-page .about-image-card {
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 32px 80px rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+}
+
+.home1-page .practice-focus-card {
+    position: relative;
+    display: flex;
+    min-height: 295px;
+    height: 100%;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: #0f172a;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #d8e8f2;
+    border-radius: 18px;
+    box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home1-page .practice-focus-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    border-top: 4px solid rgba(0, 117, 193, 0.9);
+    pointer-events: none;
+}
+
+.home1-page .service-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+    background: rgba(0, 117, 193, 0.95);
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+.home1-page .practice-focus-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 117, 193, 0.32);
+    box-shadow: 0 34px 70px rgba(15, 23, 42, 0.14);
+}
+
+.home1-page .practice-focus-card .practice-focus-icon {
+    margin-bottom: 1rem;
+}
+
+.home1-page .practice-focus-card .practice-focus-label {
+    margin-bottom: 0.85rem;
+}
+
+.home1-page .practice-focus-card .practice-focus-text {
+    color: #526173;
+}
+
+@media (max-width: 991px) {
+    .home1-page .about-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .home1-page .about-list,
+    .home1-page .sample-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .home1-page .sample-hero-b .hero-image-wrap {
+        max-width: 360px;
+    }
+    .home1-page .sample-hero-b .sample-hero-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+    .home1-page .sample-hero-copy {
+        font-size: 1rem;
+    }
+}
+
+.home1-page {
+    background: #ffffff;
+    color: #0f2438;
+}
+
+.home1-page .sample-hero-b {
+    position: relative;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(105deg, rgba(3, 45, 74, 0.96) 0%, rgba(0, 117, 193, 0.84) 52%, rgba(244, 250, 255, 0.96) 52.2%, #ffffff 100%),
+        url('../images/banner.png') left center/cover no-repeat;
+}
+
+.home1-page .sample-hero-b::before {
+    opacity: 0.2;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.72) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.home1-page .hero-copy-block {
+    max-width: 660px;
+}
+
+.home1-page .sample-hero-title {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 6vw, 6.2rem);
+    line-height: 0.94;
+    text-transform: none;
+}
+
+.home1-page .sample-hero-title span {
+    color: #cdeeff;
+}
+
+.home1-page .sample-hero-copy {
+    max-width: 560px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+}
+
+.home1-page .sample-primary-btn {
+    background: #ffffff;
+    color: #006eb5;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+}
+
+.home1-page .sample-secondary-btn {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: #ffffff;
+}
+
+.home1-page .sample-stat {
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+.home1-page .sample-stat strong {
+    color: #ffffff;
+}
+
+.home1-page .sample-stat span {
+    color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.home1-page .hero-image-wrap {
+    max-width: 520px;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid rgba(0, 117, 193, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 30px 80px rgba(3, 45, 74, 0.18);
+}
+
+.home1-page .sample-hero-logo {
+    filter: drop-shadow(0 16px 24px rgba(0, 117, 193, 0.12));
+}
+
+.home1-page .vision-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f3faff 100%);
+}
+
+.home1-page .vision-title,
+.home1-page .practice-focus-title,
+.home1-page .sample-blue-band h2,
+.home1-page .contact-footer h2 {
+    color: #0f2438;
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0;
+}
+
+.home1-page .vision-divider {
+    background: #0075c1;
+}
+
+.home1-page .vision-card {
+    height: 100%;
+    padding: 1.4rem;
+    background: #ffffff;
+    border: 1px solid rgba(0, 117, 193, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 24px 54px rgba(15, 36, 56, 0.08);
+}
+
+.home1-page .vision-image {
+    width: 100%;
+    height: 260px;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.home1-page .vision-card h3 {
+    color: #053d63;
+}
+
+.home1-page .vision-card p,
+.home1-page .practice-focus-copy,
+.home1-page .practice-focus-text {
+    color: #5d6f82;
+}
+
+.home1-page .practice-focus-section {
+    background: #ffffff;
+}
+
+.home1-page .practice-kicker,
+.home1-page .practice-focus-link {
+    color: #0075c1;
+}
+
+.home1-page .practice-focus-card {
+    border-radius: 8px;
+}
+
+.home1-page .practice-focus-icon {
+    color: #ffffff;
+    background: #0075c1;
+}
+
+.home1-page .practice-focus-label {
+    color: #0f2438;
+}
+
+.home1-page .sample-blue-band {
+    background:
+        linear-gradient(135deg, rgba(0, 117, 193, 0.94), rgba(5, 61, 99, 0.96)),
+        url('../images/khushdeep-37.jpg') center/cover no-repeat !important;
+}
+
+.home1-page .sample-blue-band h2,
+.home1-page .sample-blue-band p {
+    color: #ffffff;
+}
+
+.home1-page .contact-footer {
+    background: #031923;
+}
+
+.home1-page .footer-contact-block,
+.home1-page .footer-hours-block {
+    background: #ffffff;
+    border: 1px solid rgba(0, 117, 193, 0.16);
+    border-radius: 8px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.home1-page .footer-contact-block h2,
+.home1-page .footer-hours-block h2 {
+    color: #053d63;
+}
+
+@media (max-width: 991.98px) {
+    .home1-page .sample-hero-b {
+        min-height: auto;
+        background:
+            linear-gradient(180deg, rgba(3, 45, 74, 0.95), rgba(0, 117, 193, 0.86)),
+            url('../images/banner.png') center/cover no-repeat;
+    }
+
+    .home1-page .sample-hero-title,
+    .home1-page .sample-hero-copy {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home1-page .sample-hero-b {
+        padding: 4rem 0;
+    }
+
+    .home1-page .vision-card {
+        padding: 1rem;
+    }
+
+    .home1-page .vision-image {
+        height: 220px;
+    }
 }
 
 .sample-stats-grid {
