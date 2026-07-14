@@ -1960,7 +1960,7 @@ body {
         .bgl-logo-image {
             display: block;
             width: clamp(72px, 8vw, 98px);
-            height: 72px;
+            height: 98px;
             object-fit: contain;
             object-position: left center;
         }
