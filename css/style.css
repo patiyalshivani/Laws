@@ -3625,6 +3625,10 @@ body {
     padding: clamp(4.5rem, 7vw, 7rem) 0;
 }
 
+.home1-page .hl-hero {
+    padding: 0px !important;
+}
+
 .home1-page .hl-kicker {
     margin: 0 0 0.7rem;
     color: var(--hl-blue);
