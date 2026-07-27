@@ -3887,7 +3887,7 @@ body {
 
 .home1-page .hl-attention-grid {
     display: grid;
-    grid-template-columns: 1fr minmax(280px, 430px) 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
 }
@@ -3911,8 +3911,8 @@ body {
 }
 
 .home1-page .hl-attention-col i {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     display: grid;
     place-items: center;
     margin: 0 auto 0.8rem;
@@ -3940,7 +3940,7 @@ body {
     box-shadow: 0 22px 44px rgba(5, 71, 103, 0.18);
 }
 .hl-attention i:before{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .home1-page .hl-matter-card h3 {
@@ -4124,7 +4124,7 @@ body {
 .home1-page .hl-footer {
     padding: 4rem 0 1.5rem;
     color: #dbeafe;
-    background: #0b4f7a;
+    background: #064767 !important;
 }
 
 .home1-page .hl-footer h3 {
