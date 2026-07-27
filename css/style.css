@@ -4961,3 +4961,8 @@ body {
     }
 }
 
+@media (min-width: 1920px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1550px;
+    }
+}
