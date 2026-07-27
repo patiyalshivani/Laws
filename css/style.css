@@ -3673,7 +3673,7 @@ body {
     color: #ffffff;
     background:
         linear-gradient(90deg, rgba(5, 52, 78, 0.96), rgba(5, 52, 78, 0.78)),
-        url("../images/khushdeep-37.jpg") center/cover no-repeat;
+        url("../images/khushdeep-37.jpg") top/cover no-repeat;
 }
 
 .home1-page .hl-hero::after {
@@ -3682,7 +3682,7 @@ body {
     left: 0;
     right: 0;
     bottom: -1px;
-    height: 90px;
+    height: 46px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), #ffffff);
 }
 
@@ -3695,7 +3695,7 @@ body {
     max-width: 560px;
     margin: 0 0 1rem;
     color: #ffffff;
-    font-size: clamp(3.4rem, 7vw, 6.25rem);
+    font-size: clamp(3.4rem, 7vw, 5.25rem);
     line-height: 0.92;
 }
 
