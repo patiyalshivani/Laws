@@ -182,10 +182,26 @@
                     </div>
                     <div class="col-lg-3 text-lg-end"><img src="./images/logo.png" alt="BG Laws" class="hl-review-logo"></div>
                 </div>
-                <div class="row g-4 mt-3">
-                    <div class="col-md-4"><div class="hl-review-card"><strong>Responsive and clear</strong><p>BG Laws helped us understand each step and stayed available when timing mattered.</p></div></div>
-                    <div class="col-md-4"><div class="hl-review-card"><strong>Professional support</strong><p>The team explained our options and handled the process with attention to detail.</p></div></div>
-                    <div class="col-md-4"><div class="hl-review-card"><strong>Highly recommended</strong><p>Practical advice, steady communication, and a confident approach from start to finish.</p></div></div>
+                <div class="hl-review-slider mt-3" data-review-slider>
+                    <div class="hl-review-viewport">
+                        <div class="hl-review-track">
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Great experience</strong><p>Professional, knowledgeable, and helpful throughout the process. Everything went smoothly.</p><span>Arshdeep Kaur</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Professional and direct</strong><p>They answered our questions clearly and helped us with a practical plan.</p><span>Aultima Peters</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Excellent lawyer</strong><p>Kind, polite, and committed to helping clients with care and effort.</p><span>Amara Josiph</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Handled with care</strong><p>The legal process felt less daunting with steady guidance from start to finish.</p><span>H S</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Professional service</strong><p>The staff was attentive, knowledgeable, and focused on the client's matter.</p><span>Namarpreet Sandha</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Excellent support</strong><p>Great customer service and a professional approach worth recommending.</p><span>Anu Bhardwaj</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Accessible team</strong><p>Responsive, accessible, and available when needed with reasonable fees.</p><span>Hussein AH</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Highly responsive</strong><p>Professional, responsive, and helpful throughout the matter.</p><span>Deepika Sharma</span></div></div>
+                            <div class="hl-review-slide"><div class="hl-review-card"><strong>Strongly recommend</strong><p>Strongly recommend BG Laws for immigration inquiries.</p><span>Akshat _315</span></div></div>
+                        </div>
+                    </div>
+                    <button class="hl-review-nav hl-review-prev" type="button" aria-label="Previous review">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="hl-review-nav hl-review-next" type="button" aria-label="Next review">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -273,5 +289,74 @@
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('[data-review-slider]').forEach((slider) => {
+            const track = slider.querySelector('.hl-review-track');
+            const slides = Array.from(slider.querySelectorAll('.hl-review-slide'));
+            const prev = slider.querySelector('.hl-review-prev');
+            const next = slider.querySelector('.hl-review-next');
+            const autoplayDelay = 4500;
+            let current = 0;
+            let perView = 1;
+            let autoplayTimer;
+
+            const getPerView = () => {
+                if (window.innerWidth >= 992) return 3;
+                if (window.innerWidth >= 600) return 2;
+                return 1;
+            };
+
+            const update = () => {
+                perView = getPerView();
+                const total = slides.length;
+                current = ((current % total) + total) % total;
+                const centerOffset = Math.floor(perView / 2);
+                const start = (current - centerOffset + total) % total;
+                track.style.transform = 'translateX(0)';
+                slides.forEach((_, index) => {
+                    track.appendChild(slides[(start + index) % total]);
+                });
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === current);
+                });
+            };
+
+            const goToNext = () => {
+                current += 1;
+                update();
+            };
+
+            const startAutoplay = () => {
+                stopAutoplay();
+                autoplayTimer = window.setInterval(goToNext, autoplayDelay);
+            };
+
+            const stopAutoplay = () => {
+                window.clearInterval(autoplayTimer);
+            };
+
+            prev.addEventListener('click', () => {
+                current -= 1;
+                update();
+            });
+
+            next.addEventListener('click', () => {
+                goToNext();
+            });
+
+            window.addEventListener('resize', () => {
+                update();
+            });
+
+            slider.addEventListener('mouseenter', stopAutoplay);
+            slider.addEventListener('mouseleave', startAutoplay);
+            slider.addEventListener('focusin', stopAutoplay);
+            slider.addEventListener('focusout', startAutoplay);
+
+            current = Math.min(Math.floor(getPerView() / 2), slides.length - 1);
+            update();
+            startAutoplay();
+        });
+    </script>
 </body>
 </html>

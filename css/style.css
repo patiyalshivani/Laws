@@ -3969,34 +3969,187 @@ body {
 }
 
 .home1-page .hl-reviews {
-    background: linear-gradient(90deg, #f2fbff 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+    padding: clamp(4rem, 7vw, 6rem) 0;
+    background: linear-gradient(180deg, #f3fbff 0%, #eef9ff 100%);
+}
+
+.home1-page .hl-reviews .row.align-items-center {
+    margin-bottom: 1.8rem;
+}
+
+.home1-page .hl-reviews .hl-kicker {
+    margin-bottom: 0.45rem;
+    color: var(--hl-blue);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+}
+
+.home1-page .hl-reviews h2 {
+    max-width: 920px;
+    margin-bottom: 0;
+    color: #13293a;
+    font-size: clamp(2.3rem, 4vw, 3.40rem);
+    line-height: 0.98;
 }
 
 .home1-page .hl-review-logo,
 .home1-page .hl-footer-logo {
-    max-width: 100px;
+    max-width: 112px;
+}
+
+.home1-page .hl-review-logo {
+    filter: none;
 }
 
 .home1-page .hl-review-card {
     height: 100%;
-    min-height: 116px;
-    padding: 1rem;
-    background: #ffffff;
-    border: 1px solid rgba(0, 117, 193, 0.1);
-    border-radius: 5px;
-    box-shadow: 0 16px 36px rgba(15, 35, 54, 0.08);
+    min-height: 188px;
+    padding: clamp(1.35rem, 2vw, 1.8rem);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 117, 193, 0.12);
+    border-radius: 6px;
+    box-shadow: none;
 }
 
 .home1-page .hl-review-card strong {
     display: block;
-    margin-bottom: 0.45rem;
-    color: var(--hl-ink);
+    margin-bottom: 0.9rem;
+    color: #203447;
+    font-size: 1.05rem;
+    line-height: 1.25;
 }
 
 .home1-page .hl-review-card p {
-    color: var(--hl-muted);
-    font-size: 0.82rem;
+    color: #7d8da0;
+    font-size: 0.95rem;
+    line-height: 1.75;
     margin: 0;
+}
+
+.home1-page .hl-review-card span {
+    display: block;
+    margin-top: 1.15rem;
+    color: var(--hl-blue);
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+.home1-page .hl-review-slider {
+    position: relative;
+    padding: 0 4.1rem 3rem;
+}
+
+.home1-page .hl-review-viewport {
+    overflow: hidden;
+    padding: 1rem 0 1.1rem;
+}
+
+.home1-page .hl-review-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.45s ease;
+    will-change: transform;
+}
+
+.home1-page .hl-review-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.home1-page .hl-review-slider .hl-review-card {
+    transition: border-color 0.35s ease, transform 0.35s ease;
+}
+
+.home1-page .hl-review-slide:not(.active) {
+    opacity: 0.88;
+}
+
+.home1-page .hl-review-slide.active .hl-review-card {
+    border-color: rgba(0, 117, 193, 0.34);
+    box-shadow: none;
+    transform: translateY(-10px);
+}
+
+.home1-page .hl-review-nav {
+    position: absolute;
+    top: calc(50% - 0.2rem);
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid rgba(0, 117, 193, 0.15);
+    border-radius: 50%;
+    background: #ffffff;
+    color: var(--hl-blue);
+    opacity: 1;
+    box-shadow: none;
+    transition: var(--transition);
+}
+
+.home1-page .hl-review-nav:disabled {
+    cursor: not-allowed;
+    opacity: 0.38;
+}
+
+.home1-page .hl-review-prev {
+    left: 0.15rem;
+}
+
+.home1-page .hl-review-next {
+    right: 0.15rem;
+}
+
+.home1-page .hl-review-nav:not(:disabled):hover {
+    color: #ffffff;
+    background: var(--hl-blue);
+    transform: translateY(-2px);
+}
+
+@media (min-width: 600px) {
+    .home1-page .hl-review-slide {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+}
+
+@media (min-width: 992px) {
+    .home1-page .hl-review-slide {
+        flex-basis: calc((100% - 4rem) / 3);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .home1-page .hl-review-logo {
+        max-width: 92px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home1-page .hl-review-slider {
+        padding: 0 0 3.05rem;
+    }
+
+    .home1-page .hl-review-nav {
+        top: auto;
+        bottom: 0;
+        width: 36px;
+        height: 36px;
+        transform: none;
+    }
+
+    .home1-page .hl-review-prev {
+        left: calc(50% - 48px);
+    }
+
+    .home1-page .hl-review-next {
+        right: calc(50% - 48px);
+    }
+
+    .home1-page .hl-review-card {
+        min-height: 170px;
+    }
 }
 
 .home1-page .hl-faq {
