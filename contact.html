@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
 </head>
-<body>
+<body class="contact-page">
 
     <!-- BG Laws Header -->
     <header>
         <div class="bgl-topbar py-2">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="bgl-social d-flex align-items-center gap-3">
-                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/bg_laws?igsh=MXR4cTE4ejFiOGNqOQ%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="bgl-quicklinks dropdown">
-                    <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+                    <a href="about.html"> <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="laws.html">All Services</a></li>
                         <li><a class="dropdown-item" href="immigration.html">Immigration Law</a></li>
                         <li><a class="dropdown-item" href="criminal-law.html">Criminal Defence</a></li>
                         <li><a class="dropdown-item" href="real-estate.html">Real Estate Law</a></li>
-                    </ul>
+                    </ul></a>
                     <a href="about.html">About Us</a>
-                    <a href="about.html">Meet the Team</a>
                 </div>
             </div>
         </div>
 
-        <div class="bgl-main-header py-3">
-            <div class="container d-flex justify-content-end align-items-center">
+          <div class="bgl-main-header py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="d-flex align-items-center text-decoration-none" href="index.html" aria-label="BG Laws home">
+                    <img src="./images/Bg.PNG" alt="BG Laws" class="bgl-logo-image">
+                </a>
                 <div class="d-flex align-items-center gap-4 flex-wrap">
                     <div>
                         <div class="bgl-phone-label">For advice and support</div>
@@ -48,7 +47,6 @@
                 </div>
             </div>
         </div>
-
         <nav class="bgl-nav-wrap" aria-label="Service navigation">
             <div class="container">
                 <ul class="bgl-service-nav">
@@ -95,9 +93,7 @@
         <div class="container">
             <div class="row g-5">
                 <!-- Contact Image and Info -->
-                <div class="col-lg-8">
-                    <img src="./images/khushdeep-89.jpg" alt="Contact Us" class="img-fluid rounded-3 shadow mb-5">
-                </div>
+               
                 <div class="col-lg-4">
                     <div class="mb-5">
                         <h3 class="mb-4 fw-bold">Contact Information</h3>
@@ -241,113 +237,68 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-5">
+    <section class="hl-faq">
         <div class="container">
-            <h3 class="mb-5 fw-bold text-center">Frequently Asked Questions</h3>
-            <div class="row">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-8 offset-lg-2">
-                    <div class="accordion" id="faqAccordion">
+                    <p class="hl-kicker">Common Inquiries</p>
+                    <h2>Clear Answers To Your Legal Queries</h2>
+                        <div class="accordion hl-accordion" id="contactFaq">
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    How can I find specific laws?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqOne">How quickly can I receive legal assistance?</button></h3>
+                            <div id="contactFaqOne" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
                                 <div class="accordion-body">
-                                    You can use the search functionality on our Practice Areas page to find services by name, category, or keyword. You can also browse Immigration Law, Criminal Defence, Real Estate Law, and related services.
+                                    Contact us with the details of your matter and we will help identify the next practical step.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    How often is the content updated?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqTwo">What geographic areas does BG Laws serve?</button></h3>
+                            <div id="contactFaqTwo" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
                                 <div class="accordion-body">
-                                    We update our database regularly to reflect the latest amendments and new laws. All changes are typically reflected within 24-48 hours of official publication.
+                                    We provide legal services across Ontario in the areas of Real Estate and Criminal Law. We also represent clients from around the world in all areas of Canadian Immigration Law.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Is this a substitute for legal advice?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqThree">How does BG Laws keep me informed?</button></h3>
+                            <div id="contactFaqThree" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
                                 <div class="accordion-body">
-                                    No. While we provide comprehensive legal information, this website is not a substitute for professional legal advice. Please consult with a qualified attorney for specific legal matters.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    Can you help interpret a specific law?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Our experts are available for consultation. Please use the contact form to describe your question, and we'll be happy to help where we can, or recommend appropriate professional resources.
+                                    We focus on plain-language updates, clear timelines, and practical next steps.
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a href="contact.html" class="hl-btn hl-btn-small">View More FAQ <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background-color: rgba(0, 117, 193, 0.9); color: #e2e8f0;" class="py-5">
+    <footer class="hl-footer">
         <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">BG Laws</h5>
-                    <p style="color: #cbd5e0;">Professional legal services dedicated to helping you navigate complex legal matters with confidence.</p>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Home</a></li>
-                        <li><a href="about.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">About</a></li>
-                        <li><a href="laws.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Practice Areas</a></li>
-                        <li><a href="contact.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="immigration.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Immigration Law</a></li>
-                        <li><a href="criminal-law.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Criminal Defence</a></li>
-                        <li><a href="real-estate.html" style="color: #cbd5e0;" class="text-decoration-none hover-link">Real Estate Law</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Contact</h5>
-                    <p class="mb-2" style="color: #cbd5e0;"><i class="fas fa-phone me-2"></i>647-302-9946</p>
-                    <p class="mb-2" style="color: #cbd5e0;"><i class="fas fa-envelope me-2"></i>info@bglaws.ca</p>
-                    <p class="mb-3" style="color: #cbd5e0;"><i class="fas fa-map-marker-alt me-2"></i>81 Zenway Blvd, Unit 2, Woodbridge, ON, L4H 0S5</p>
-                    <div class="d-flex gap-2">
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" style="color: #63b3ed;" class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+            <div class="row g-1">
+                <div class="col-md-3"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="laws.html">Services</a><a href="contact.html">Contact</a></div>
+                <div class="col-md-3"><h3>Our Services</h3><a href="criminal-law.html">Criminal Law</a><a href="immigration.html">Immigration Law</a><a href="real-estate.html">Real Estate Law</a><a href="corporate-law.html">Corporate Law</a></div>
+                <div class="col-md-6 text-md-center">
+                    <div class="">
+                        <h3>Hours</h3>
+                        <div class="hours-list">
+                            <div><span>Mon</span><span>09:00 a.m. - 05:00 p.m.</span></div>
+                            <div><span>Tue</span><span>09:00 a.m. - 05:00 p.m.</span></div>
+                            <div ><span>Wed</span><span>09:00 a.m. - 05:00 p.m.</span></div>
+                            <div><span>Thu</span><span>09:00 a.m. - 05:00 p.m.</span></div>
+                            <div><span>Fri</span><span>09:00 a.m. - 05:00 p.m.</span></div>
+                            <div><span>Sat</span><span>By Appointment</span></div>
+                            <div><span>Sun</span><span>Closed</span></div>
+                        </div>
+                        
                     </div>
                 </div>
+                
             </div>
-            <hr style="border-color: rgba(255, 255, 255, 0.2);">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0" style="color: #cbd5e0;">&copy; 2026 BG Laws. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" style="color: #cbd5e0;" class="text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" style="color: #cbd5e0;" class="text-decoration-none">Terms of Service</a>
-                </div>
-            </div>
+            <div class="hl-footer-bottom">Copyright &copy; 2026 BG Laws. All Rights Reserved.</div>
         </div>
     </footer>
     <script>
@@ -364,6 +315,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="service-detail.js"></script>
 </html>
 
 
