@@ -5,14 +5,14 @@
 
 :root {
     /* Modern Color Palette */
-    --primary-color: #0075c1e6;
+    --primary-color: rgba(0, 117, 193, 0.9);
     --primary-dark: #0064a5;
     --primary-light: rgba(0, 117, 193, 0.14);
     --secondary-color: #6c757d;
-    --success-color: #0075c1e6;
-    --danger-color: #0075c1e6;
-    --info-color: #0075c1e6;
-    --warning-color: #0075c1e6;
+    --success-color: rgba(0, 117, 193, 0.9);
+    --danger-color: rgba(0, 117, 193, 0.9);
+    --info-color: rgba(0, 117, 193, 0.9);
+    --warning-color: rgba(0, 117, 193, 0.9);
     --light-bg: #f6fbff;
     --lighter-bg: #edf7ff;
     --dark-bg: #005f9d;
@@ -5143,7 +5143,7 @@ body {
 
 .home1-page .hl-hero {
     overflow: hidden;
-    background: #0075c1e6;
+    background: rgba(0, 117, 193, 0.9);
 }
 
 .home1-page .hl-hero::before {
@@ -5229,7 +5229,7 @@ body {
 
 .practice-hero-immigration,
 .practice-hero-criminal,
-.practice-hero-real-estate { background-color: #0075c1e6 !important; }
+.practice-hero-real-estate { background-color: rgba(0, 117, 193, 0.9) !important; }
 
 .practice-hero h1 {
     max-width: 850px;
@@ -5325,7 +5325,7 @@ body {
 
 .urgent-consultation {
     color: #ffffff;
-    background: #0075c1e6;
+    background: rgba(0, 117, 193, 0.9);
 }
 
 .urgent-consultation .container {
