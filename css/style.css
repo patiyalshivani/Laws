@@ -5141,6 +5141,27 @@ body {
     background: #f8fafb;
 }
 
+.home1-page .hl-hero {
+    overflow: hidden;
+    background: #317354;
+}
+
+.home1-page .hl-hero::before {
+    content: "";
+    position: absolute;
+    top: -260px;
+    right: -90px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.home1-page .hl-hero::after {
+    height: 0;
+    background: transparent;
+}
+
 /* ===========================
    Practice Area Pages
    =========================== */
