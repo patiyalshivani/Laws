@@ -35,6 +35,7 @@
     };
 
     const appendSourceContent = async (type, category, title, slug) => {
+        if (document.querySelector('.service-source-content')) return;
         const sourcePage = type === 'immigration' ? 'immigration.html' : type === 'criminal' ? 'criminal-law.html' : 'real-estate.html';
         try {
             const response = await fetch(sourcePage);
