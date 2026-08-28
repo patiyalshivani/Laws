@@ -18,6 +18,7 @@
     };
     const addSiteChrome = () => {
         if (!document.querySelector('.service-detail-page')) return;
+        if (document.querySelector('.service-site-header')) return;
         ['https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', 'css/style.css'].forEach((href) => {
             if (!document.querySelector(`link[href="${href}"]`)) {
                 const link = document.createElement('link');
@@ -43,12 +44,8 @@
                 const selectors = { 'Bail Hearings & Bail Reviews': '#bail', 'Impaired Driving (DUI)': '#dui', 'Refusal to Provide a Breath Sample': '#dui', 'Assault-Related Charges': '#assault', 'Domestic-Related Criminal Allegations': '#harassment', 'Uttering Threats': '#harassment', 'Criminal Harassment': '#harassment', 'Robbery & Extortion': '#property', 'Mischief': '#property', 'Theft': '#property', 'Fraud': '#property' };
                 sourceNode = source.querySelector(selectors[title]);
             } else if (type === 'immigration') {
-                if (slug === 'lmia') {
-                    sourceNode = source.querySelector('#lmia-guidance');
-                } else {
-                    const phrase = category.includes('Temporary') ? 'Post-Graduation Work Permit' : category.includes('Permanent') ? 'Provincial Nominee Program' : category.includes('Refugee') ? 'Refugee Claims' : 'Judicial Reviews';
-                    sourceNode = [...source.querySelectorAll('article')].find((article) => article.textContent.includes(phrase));
-                }
+                const phrase = category.includes('Temporary') ? 'Post-Graduation Work Permit' : category.includes('Permanent') ? 'Provincial Nominee Program' : category.includes('Refugee') ? 'Refugee Claims' : 'Judicial Reviews';
+                sourceNode = [...source.querySelectorAll('article')].find((article) => article.textContent.includes(phrase));
             } else {
                 sourceNode = source.querySelector('.col-lg-8');
             }
