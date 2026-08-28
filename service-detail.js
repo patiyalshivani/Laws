@@ -66,6 +66,7 @@
     };
 
     const renderServiceMenus = () => {
+        if (document.querySelector('.service-detail-page') && document.querySelector('script[src="site-chrome.js"]')) return;
         const groups = menuGroups.map(groupMarkup).join('');
         document.querySelectorAll('.bgl-quicklinks .dropdown-menu').forEach((menu) => { menu.innerHTML = groups; menu.classList.add('bgl-service-menu-list'); });
         document.querySelectorAll('.bgl-service-nav').forEach((nav) => {
