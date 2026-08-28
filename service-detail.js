@@ -3,7 +3,7 @@
         { title: "Immigration Law", className: "immigration", items: [
             ["Post-Graduate Work Permits", "post-graduate-work-permits.html"], ["LMIA", "lmia.html"], ["Spousal Open Work Permit", "spousal-open-work-permit.html"], ["LMIA-Based Work Permits", "lmia-based-work-permits.html"], ["Super Visa", "super-visa.html"], ["Visitor Visas", "visitor-visas.html"], ["Provincial Nominee Programs", "provincial-nominee-programs.html"], ["Express Entry", "express-entry.html"], ["Spousal Sponsorships", "spousal-sponsorships.html"], ["Parents & Grandparents", "parents-grandparents.html"], ["Humanitarian & Compassionate", "humanitarian-compassionate.html"], ["PR Card Renewals", "permanent-resident-card-renewals.html"], ["Citizenship Applications", "citizenship-applications.html"], ["Atlantic Immigration Program", "atlantic-immigration-program.html"], ["Rural Community Immigration Pilot", "rural-community-immigration-pilot.html"], ["Refugee Claims & Appeals", "refugee-claims-appeals.html"], ["Protected Person PR", "protected-person-pr-applications.html"], ["PRRA", "prra.html"], ["Travel Documents", "travel-documents.html"], ["Judicial Reviews", "judicial-reviews-federal-court.html"], ["Stay of Removal Orders", "stay-of-removal-orders.html"], ["Admissibility Hearings & Detention Reviews", "admissibility-hearings.html"], ["Family Class Sponsorship Appeals", "family-class-sponsorship-appeals.html"], ["Writ of Mandamus", "writ-of-mandamus.html"]
         ]},
-        { title: "Criminal Defence", className: "criminal", items: [["Bail Hearings & Reviews", "bail-hearings-reviews.html"], ["Impaired Driving", "impaired-driving.html"], ["Breath Sample Refusal", "breath-sample-refusal.html"], ["Assault Charges", "assault-charges.html"], ["Sexual Assault", "domestic-allegations.html"], ["Criminal Harassment and Uttering Threats Charges", "uttering-threats.html"], ["Criminal Harassment", "criminal-harassment.html"], ["Robbery & Extortion", "robbery-extortion.html"], ["Mischief", "mischief.html"], ["Theft", "theft.html"], ["Fraud", "fraud.html"]]},
+        { title: "Criminal Defence", className: "criminal", items: [["Bail Hearings & Reviews", "bail-hearings-reviews.html"], ["Impaired Driving", "impaired-driving.html"], ["Breath Sample Refusal", "breath-sample-refusal.html"], ["Assault Charges", "assault-charges.html"], ["Sexual Assault", "domestic-allegations.html"], ["Criminal Harassment and Uttering Threats Charges", "uttering-threats.html"], ["Robbery & Extortion", "robbery-extortion.html"], ["Mischief", "mischief.html"], ["Theft", "theft.html"], ["Fraud", "fraud.html"]]},
         { title: "Real Estate Law", className: "real-estate", items: [["Real Estate Law", "real-estate.html"]]}
     ];
 
@@ -12,7 +12,7 @@
         const sections = group.className === 'immigration'
             ? [['Temporary Status', 0, 6], ['Permanent Residence & Citizenship', 6, 15], ['Refugee & Protection', 15, 19], ['Litigation & Enforcement', 19, 24]]
             : group.className === 'criminal'
-                ? [['Bail & Driving', 0, 3], ['Assault & Allegations', 3, 7], ['Property & Financial Charges', 7, 11]]
+                ? [['Bail & Driving', 0, 3], ['Assault & Allegations', 3, 6], ['Property & Financial Charges', 6, 10]]
                 : [['Residential Real Estate', 0, 1], ['Commercial Real Estate', 1, 2], ['Investment & Refinancing', 2, 3]];
         return sections.map(([title, start, end]) => `<div class="bgl-menu-subgroup bgl-submenu-trigger"><button type="button" class="bgl-subgroup-label">${title}<i class="fas fa-chevron-right" aria-hidden="true"></i></button><div class="bgl-submenu">${group.items.slice(start, end).map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</div></div>`).join('');
     };
@@ -43,7 +43,7 @@
             const source = new DOMParser().parseFromString(await response.text(), 'text/html');
             let sourceNode;
             if (type === 'criminal') {
-                const selectors = { 'Bail Hearings & Bail Reviews': '#bail', 'Impaired Driving (DUI)': '#dui', 'Refusal to Provide a Breath Sample': '#dui', 'Assault-Related Charges': '#assault', 'Domestic-Related Criminal Allegations': '#harassment', 'Uttering Threats': '#harassment', 'Criminal Harassment': '#harassment', 'Robbery & Extortion': '#property', 'Mischief': '#property', 'Theft': '#property', 'Fraud': '#property' };
+                const selectors = { 'Bail Hearings & Bail Reviews': '#bail', 'Impaired Driving (DUI)': '#dui', 'Refusal to Provide a Breath Sample': '#dui', 'Assault-Related Charges': '#assault', 'Domestic-Related Criminal Allegations': '#harassment', 'Uttering Threats': '#harassment', 'Robbery & Extortion': '#property', 'Mischief': '#property', 'Theft': '#property', 'Fraud': '#property' };
                 sourceNode = source.querySelector(selectors[title]);
             } else if (type === 'immigration') {
                 const phrase = category.includes('Temporary') ? 'Post-Graduation Work Permit' : category.includes('Permanent') ? 'Provincial Nominee Program' : category.includes('Refugee') ? 'Refugee Claims' : 'Judicial Reviews';
@@ -121,7 +121,6 @@
         "assault-charges": ["Criminal Defence", "Assault-Related Charges", "Assault offences cover a range of allegations. Defence issues may include consent, identity, credibility, intent, accidental contact, and the evidence of harm or weapon use.", "criminal"],
         "domestic-allegations": ["Criminal Defence", "Sexual Assault", "Sexual assault charges require careful analysis of evidence, credibility, consent, and the circumstances surrounding the alleged encounter.", "criminal"],
         "uttering-threats": ["Criminal Defence", "Criminal Harassment and Uttering Threats Charges", "Harassment and uttering-threats allegations require careful analysis of words, messages, conduct, context, intent, and credibility.", "criminal"],
-        "criminal-harassment": ["Criminal Defence", "Criminal Harassment", "Criminal harassment allegations may involve repeated messages, following, monitoring, or appearing at a person's home, workplace, or school. The evidence and context must be examined carefully.", "criminal"],
         "robbery-extortion": ["Criminal Defence", "Robbery & Extortion", "Robbery and extortion allegations can carry serious consequences. Defence review may examine force, threats, identity, credibility, Charter issues, and intent.", "criminal"],
         "mischief": ["Criminal Defence", "Mischief", "Mischief allegations may concern intentional interference with property or data, including damage, unsafe use, blocked enjoyment, or computer-data interference.", "criminal"],
         "theft": ["Criminal Defence", "Theft", "Theft requires proof that property belonging to another person was taken without consent with intent to permanently deprive the owner. Consent, identity, honest belief, and evidence handling may be relevant.", "criminal"],
