@@ -122,11 +122,39 @@
             </div>
         </footer>`;
 
+    const menuGroups = {
+        immigration: [
+            ['Temporary Status', [['Post-Graduate Work Permits', 'post-graduate-work-permits.html'], ['LMIA', 'lmia.html'], ['Spousal Open Work Permit', 'spousal-open-work-permit.html'], ['LMIA-Based Work Permits', 'lmia-based-work-permits.html'], ['Super Visa', 'super-visa.html'], ['Visitor Visas', 'visitor-visas.html']]],
+            ['Permanent Residence & Citizenship', [['Provincial Nominee Programs', 'provincial-nominee-programs.html'], ['Express Entry', 'express-entry.html'], ['Spousal Sponsorships', 'spousal-sponsorships.html'], ['Parents & Grandparents', 'parents-grandparents.html'], ['Humanitarian & Compassionate', 'humanitarian-compassionate.html'], ['PR Card Renewals', 'permanent-resident-card-renewals.html'], ['Citizenship Applications', 'citizenship-applications.html'], ['Atlantic Immigration Program', 'atlantic-immigration-program.html'], ['Rural Community Immigration Pilot', 'rural-community-immigration-pilot.html']]],
+            ['Refugee & Protection', [['Refugee Claims & Appeals', 'refugee-claims-appeals.html'], ['Protected Person PR', 'protected-person-pr-applications.html'], ['PRRA', 'prra.html'], ['Travel Documents', 'travel-documents.html']]],
+            ['Litigation & Enforcement', [['Judicial Reviews', 'judicial-reviews-federal-court.html'], ['Stay of Removal Orders', 'stay-of-removal-orders.html'], ['Admissibility Hearings', 'admissibility-hearings.html'], ['Detention Reviews', 'detention-reviews.html'], ['Family Class Sponsorship Appeals', 'family-class-sponsorship-appeals.html']]]
+        ],
+        criminal: [
+            ['Bail & Driving', [['Bail Hearings & Reviews', 'bail-hearings-reviews.html'], ['Impaired Driving', 'impaired-driving.html'], ['Breath Sample Refusal', 'breath-sample-refusal.html']]],
+            ['Assault & Allegations', [['Assault-Related Charges', 'assault-charges.html'], ['Domestic Allegations', 'domestic-allegations.html'], ['Uttering Threats', 'uttering-threats.html'], ['Criminal Harassment', 'criminal-harassment.html']]],
+            ['Property & Financial Charges', [['Robbery & Extortion', 'robbery-extortion.html'], ['Mischief', 'mischief.html'], ['Theft', 'theft.html'], ['Fraud', 'fraud.html']]]
+        ],
+        realEstate: [['Residential Real Estate', [['Real Estate Law', 'real-estate.html']]]]
+    };
+
+    const categoryMarkup = (groups) => groups.map(([label, items]) => `<div class="bgl-menu-subgroup bgl-submenu-trigger"><button type="button" class="bgl-subgroup-label">${label}<i class="fas fa-chevron-right" aria-hidden="true"></i></button><div class="bgl-submenu">${items.map(([name, href]) => `<a href="${href}">${name}</a>`).join('')}</div></div>`).join('');
+
+    const renderDropdowns = (shell) => {
+        const dropdowns = shell.querySelectorAll('.bgl-service-item .bgl-dropdown');
+        [menuGroups.immigration, menuGroups.criminal, menuGroups.realEstate].forEach((groups, index) => {
+            const dropdown = dropdowns[index];
+            if (!dropdown) return;
+            dropdown.classList.add('bgl-category-dropdown');
+            dropdown.innerHTML = categoryMarkup(groups);
+        });
+    };
+
     if (!document.querySelector('.service-detail-page')) return;
     addStyles();
     const shell = document.querySelector('.service-detail-shell');
     if (!shell) return;
     if (!shell.querySelector('.service-site-header')) shell.insertAdjacentHTML('afterbegin', header);
     if (!shell.querySelector('.hl-footer')) shell.insertAdjacentHTML('beforeend', footer);
+    renderDropdowns(shell);
     addScripts();
 })();
