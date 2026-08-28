@@ -5193,8 +5193,14 @@ body {
 .bgl-category-dropdown .bgl-menu-subgroup { position: relative; padding: .12rem 0; }
 .bgl-subgroup-label { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: .65rem 0; border: 0; color: #064767; background: transparent; font-size: .78rem; font-weight: 800; letter-spacing: .05em; text-align: left; text-transform: uppercase; }
 .bgl-subgroup-label i { color: #0075c1; font-size: .7rem; }
-.bgl-submenu { position: absolute; z-index: 20; top: 0; left: calc(100% + 1rem); display: none; width: 330px; padding: .75rem 1rem; background: #ffffff; border: 1px solid #d9e4e8; box-shadow: 0 12px 28px rgba(24,52,71,.16); }
+.bgl-submenu { position: absolute; z-index: 20; top: 0; left: calc(100% + 1rem); display: none; width: min(330px, calc(100vw - 1rem)); padding: .75rem 1rem; background: #ffffff; border: 1px solid #d9e4e8; box-shadow: 0 12px 28px rgba(24,52,71,.16); }
 .bgl-submenu-trigger:hover > .bgl-submenu, .bgl-submenu-trigger:focus-within > .bgl-submenu { display: block; }
+@media (max-width: 1200px) and (min-width: 992px) {
+    .bgl-submenu { left: auto; right: 0; width: min(330px, calc(94vw - 2rem)); }
+}
+@media (max-width: 991.98px) {
+    .bgl-submenu { position: static; width: 100%; margin: .25rem 0 .5rem; box-shadow: none; }
+}
 .bgl-submenu a { display: flex !important; align-items: center; justify-content: space-between; padding: .58rem 0 !important; color: #183447 !important; font-size: .88rem !important; text-decoration: none; }
 .bgl-submenu a::after { content: '\f054'; color: #0075c1; font-family: 'Font Awesome 6 Free'; font-size: .65rem; font-weight: 900; }
 .bgl-submenu a:hover { color: #0075c1 !important; }
