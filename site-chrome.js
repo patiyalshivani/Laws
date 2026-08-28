@@ -36,7 +36,7 @@
     };
 
     const header = `
-        <header>
+        <header class="service-site-header">
             <div class="bgl-topbar py-2">
                 <div class="container d-flex justify-content-between align-items-center">
                     <div class="bgl-social d-flex align-items-center gap-3">
@@ -150,9 +150,11 @@
     };
 
     if (!document.querySelector('.service-detail-page')) return;
+    if (window.__bglChromeAdded) return;
     addStyles();
     const shell = document.querySelector('.service-detail-shell');
     if (!shell) return;
+    window.__bglChromeAdded = true;
     if (!shell.querySelector('.service-site-header')) shell.insertAdjacentHTML('afterbegin', header);
     if (!shell.querySelector('.hl-footer')) shell.insertAdjacentHTML('beforeend', footer);
     renderDropdowns(shell);
