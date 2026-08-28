@@ -131,7 +131,7 @@
         ],
         criminal: [
             ['Bail & Driving', [['Bail Hearings & Reviews', 'bail-hearings-reviews.html'], ['Impaired Driving', 'impaired-driving.html'], ['Breath Sample Refusal', 'breath-sample-refusal.html']]],
-            ['Assault & Allegations', [['Assault-Related Charges', 'assault-charges.html'], ['Domestic Allegations', 'domestic-allegations.html'], ['Uttering Threats', 'uttering-threats.html'], ['Criminal Harassment', 'criminal-harassment.html']]],
+            ['Assault & Allegations', [['Assault-Related Charges', 'assault-charges.html'], ['Domestic Allegations', 'domestic-allegations.html'], ['Uttering Threats', 'uttering-threats.html']]],
             ['Property & Financial Charges', [['Robbery & Extortion', 'robbery-extortion.html'], ['Mischief', 'mischief.html'], ['Theft', 'theft.html'], ['Fraud', 'fraud.html']]]
         ],
         realEstate: [['Residential Real Estate', [['Real Estate Law', 'real-estate.html']]]]
