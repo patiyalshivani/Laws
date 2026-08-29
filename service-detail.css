@@ -29,7 +29,7 @@ body.service-detail-page { margin: 0; color: var(--detail-ink); background: #f8f
 .service-detail-kicker { margin: 0 0 0.75rem; color: #c8e4eb; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
 .service-detail-hero h1 { max-width: 900px; margin: 0 0 1rem; font-family: Georgia, serif; font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.03; }
 .service-detail-hero p { max-width: 720px; margin: 0; color: rgba(255,255,255,.88); font-size: 1.15rem; line-height: 1.7; }
-.service-detail-main { width: 100%; max-width: 1200px; margin: 0 auto; padding: clamp(3rem, 6vw, 5.5rem) clamp(1.25rem, 5vw, 3rem); flex: 1; }
+.service-detail-main { width: 100%; margin: 0 auto; padding: clamp(3rem, 6vw, 5.5rem) clamp(1.25rem, 5vw, 3rem); flex: 1; }
 .service-detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(2rem, 6vw, 5rem); }
 .service-detail-content h2 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.6rem); }
 .service-detail-content p, .service-detail-content li { color: var(--detail-muted); line-height: 1.8; }
