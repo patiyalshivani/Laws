@@ -3629,13 +3629,23 @@ body {
    Home 1 Screenshot Redesign
    Scoped only to home1.html
    =========================== */
-.home1-page {
+/* The --hl-* palette is consumed by both page scopes (see the shared
+   .hl-kicker / .hl-btn / .hl-accordion rules below), so define it on both.
+   Leaving it on .home1-page alone made every var() on the contact page
+   invalid at computed-value time, which fell back to initial values:
+   the open FAQ header rendered white-on-white and the buttons lost their
+   background. */
+.home1-page,
+.contact-page {
     --hl-blue: #0075c1;
     --hl-blue-dark: #064767;
     --hl-navy: #052535;
     --hl-ink: #12283a;
     --hl-muted: #627184;
     --hl-soft: #f3fbff;
+}
+
+.home1-page {
     background: #ffffff;
     color: var(--hl-ink);
 }
@@ -5196,30 +5206,38 @@ body {
     background: rgba(255, 255, 255, 0.06);
 }
 
-/* Brand watermark on the home banner. Sized in vw so it keeps its proportion
-   on 1920+ screens instead of shrinking into the corner. */
+/* Brand watermark on the home banner.
+
+   logo.png is 340x347 and stacks the triangle mark (y 12-256) above the
+   "bglaws" wordmark (y 280-342). Only the mark is wanted here, so the box is
+   given the mark's aspect ratio (340 / 268, cutting through the gap at y 268)
+   and the image is scaled to the box width from the top -- the wordmark falls
+   outside the box and is clipped.
+
+   Width is sized in vw so the mark keeps its proportion on 1920+ screens
+   instead of shrinking into the corner, and stays clear of the 630px hero. */
 .home1-page .hl-hero::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: 6%;
+    right: 7%;
     left: auto;
     bottom: auto;
     z-index: 0;
-    width: clamp(320px, 34vw, 620px);
-    height: clamp(320px, 34vw, 620px);
-    background: url('../images/logo.png') center/contain no-repeat;
+    width: clamp(240px, 24vw, 440px);
+    height: auto;
+    aspect-ratio: 340 / 268;
+    background: url('../images/logo.png') center top/100% auto no-repeat;
     filter: brightness(0) invert(1);
-    opacity: 0.1;
+    opacity: 0.09;
     transform: translateY(-50%);
     pointer-events: none;
 }
 
 @media (max-width: 767.98px) {
     .home1-page .hl-hero::after {
-        right: -8%;
-        width: 260px;
-        height: 260px;
+        right: -6%;
+        width: 230px;
         opacity: 0.07;
     }
 }
