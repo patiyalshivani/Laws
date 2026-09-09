@@ -5196,9 +5196,32 @@ body {
     background: rgba(255, 255, 255, 0.06);
 }
 
+/* Brand watermark on the home banner. Sized in vw so it keeps its proportion
+   on 1920+ screens instead of shrinking into the corner. */
 .home1-page .hl-hero::after {
-    height: 0;
-    background: transparent;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    left: auto;
+    bottom: auto;
+    z-index: 0;
+    width: clamp(320px, 34vw, 620px);
+    height: clamp(320px, 34vw, 620px);
+    background: url('../images/logo.png') center/contain no-repeat;
+    filter: brightness(0) invert(1);
+    opacity: 0.1;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+    .home1-page .hl-hero::after {
+        right: -8%;
+        width: 260px;
+        height: 260px;
+        opacity: 0.07;
+    }
 }
 
 /* ===========================
@@ -5670,4 +5693,4 @@ body {
     .process-track-six {
         grid-template-columns: 1fr;
     }
-}
+}
