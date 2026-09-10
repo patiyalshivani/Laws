@@ -4201,8 +4201,20 @@ body {
     }
 }
 
+/* The home page gets its section rhythm from `.home1-page .hl-main section`,
+   but contact.html puts .hl-faq outside .hl-main, so it was rendering with
+   zero vertical padding -- running into the footer and overlapping the
+   section above. Set it on the shared rule; the more specific .hl-main rule
+   still wins on the home page (with the same value). */
 :is(.home1-page, .contact-page) .hl-faq {
+    padding: clamp(4.5rem, 7vw, 7rem) 0;
     background: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    :is(.home1-page, .contact-page) .hl-faq {
+        padding: 3.5rem 0;
+    }
 }
 
 :is(.home1-page, .contact-page) .hl-faq .row {
