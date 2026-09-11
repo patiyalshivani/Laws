@@ -4348,10 +4348,6 @@ body {
     background: #064767 !important;
 }
 
-.hl-footer>.container {
-    max-width: 1620px;
-}
-
 .hl-footer h3 {
     margin-bottom: 1rem;
     color: #ffffff;
@@ -5758,4 +5754,75 @@ body {
     inset: 0;
     background: linear-gradient(180deg, rgba(6, 71, 103, 0.06) 0%, rgba(6, 71, 103, 0.3) 100%);
     pointer-events: none;
+}
+
+/* ===========================
+   Footer layout
+   =========================== */
+/* The three columns were split 3/3/6 with the Hours block centred inside its
+   half, inside a container wider than any other section, so on large screens
+   the columns drifted apart and Hours floated in empty space. Lay them on an
+   equal grid in the site's normal container, left-align everything on one
+   baseline, and bring the Hours type down to match the link lists. */
+.hl-footer {
+    padding: clamp(3rem, 5vw, 4.5rem) 0 1.25rem;
+}
+
+.hl-footer .row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem 3rem;
+    margin: 0;
+}
+
+.hl-footer .row > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    padding: 0;
+    text-align: left !important;
+}
+
+.hl-footer h3 {
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+}
+
+.hl-footer a {
+    margin-bottom: 0.55rem;
+    font-size: 0.92rem;
+}
+
+.hl-footer .hours-list {
+    display: grid;
+    gap: 0.45rem;
+    justify-content: start;
+    max-width: none;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.hl-footer .hours-list div {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    gap: 0.75rem;
+}
+
+.hl-footer .hours-list div span:first-child {
+    color: rgba(219, 234, 254, 0.72);
+}
+
+.hl-footer .hours-list div span:last-child {
+    color: #ffffff;
+}
+
+.hl-footer-bottom {
+    margin-top: 2.5rem;
+    padding: 1.1rem 0 0;
+}
+
+@media (max-width: 767.98px) {
+    .hl-footer .row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
