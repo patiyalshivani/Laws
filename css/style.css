@@ -109,14 +109,15 @@ body {
     border-color: var(--primary-color) !important;
 }
 
-/* Page banners share the footer's dark blue (.hl-footer) rather than the
-   lighter --primary-color, so the top bar, banner and footer read as one. */
-.page-header {
+/* Page banners and the CTA band share the footer's dark blue (.hl-footer)
+   rather than the lighter --primary-color, so the top bar, banner, CTA and
+   footer read as one. */
+.page-header,
+.cta-section {
     background: #064767 !important;
     color: #ffffff !important;
 }
 
-.cta-section,
 footer {
     background: var(--primary-color) !important;
     color: #ffffff !important;
