@@ -5902,28 +5902,18 @@ body {
 /* ===========================
    Footer disclaimer
    =========================== */
-/* Spans the full footer width; the four paragraphs flow into two columns on
-   desktop so the block fills the row without 200-character lines. */
+/* Spans the full footer width, single column. */
 .hl-footer-disclaimer {
     margin-top: 2.5rem;
     padding-top: 1.75rem;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
-    column-gap: 3.5rem;
-}
-
-@media (min-width: 992px) {
-    .hl-footer-disclaimer {
-        columns: 2;
-    }
 }
 
 .hl-footer-disclaimer h3 {
-    column-span: all;
     margin-bottom: 1rem;
 }
 
 .hl-footer-disclaimer p {
-    break-inside: avoid;
     margin-bottom: 0.65rem;
     color: rgba(219, 234, 254, 0.78);
     font-size: 0.8rem;
