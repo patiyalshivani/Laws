@@ -139,7 +139,15 @@
     if (!service) return;
     const [category, title, description, type] = service;
     document.title = `${title} | BG Laws`;
-    document.querySelector('.service-detail-hero').dataset.category = type;
+    const hero = document.querySelector('.service-detail-hero');
+    hero.dataset.category = type;
+    hero.classList.add(`practice-hero-${type}`); // same modifier the practice pages use -> same #064767 banner
+    // Breadcrumb: Home / Practice Areas / <category page> / <this service>
+    const parent = { immigration: ['immigration.html', 'Immigration Law'], criminal: ['criminal-law.html', 'Criminal Defence'], 'real-estate': ['real-estate.html', 'Real Estate Law'] }[type];
+    const crumbParent = document.querySelector('[data-detail-parent]');
+    if (crumbParent && parent) crumbParent.innerHTML = `<a href="${parent[0]}">${parent[1]}</a>`;
+    const crumb = document.querySelector('[data-detail-crumb]');
+    if (crumb) crumb.textContent = title;
     document.querySelector('[data-detail-category]').textContent = category;
     document.querySelector('[data-detail-title]').textContent = title;
     document.querySelector('[data-detail-description]').textContent = description;

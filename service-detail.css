@@ -24,13 +24,11 @@ body.service-detail-page { margin: 0; color: var(--detail-ink); background: #f8f
 .service-detail-menu-panel strong, .service-detail-menu-panel a { display: block; }
 .service-detail-menu-panel strong { margin-bottom: .45rem; color: var(--detail-blue); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
 .service-detail-menu-panel a { padding: .25rem 0; color: var(--detail-ink); font-size: .8rem; text-decoration: none; }
-.service-detail-hero { padding: clamp(4rem, 8vw, 7rem) max(1.25rem, 5vw); color: #ffffff; background: #064767; }
-.service-detail-hero[data-category="criminal"], .service-detail-hero[data-category="real-estate"] { background: #064767 }
-.service-detail-kicker { margin: 0 0 0.75rem; color: #c8e4eb; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
-.service-detail-hero h1 { max-width: 900px; margin: 0 0 1rem; font-family: Georgia, serif; font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.03; }
-.service-detail-hero p { max-width: 720px; margin: 0; color: rgba(255,255,255,.88); font-size: 1.15rem; line-height: 1.7; }
-.service-detail-main { width: min(1120px, calc(100% - 2.5rem)); margin: 0 auto; padding: clamp(3rem, 6vw, 5.5rem) 0; flex: 1; }
-.service-detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(2rem, 6vw, 5rem); }
+/* Sized by Bootstrap .container so the content lines up with the banner above it. */
+.service-detail-main { padding-top: clamp(3rem, 6vw, 5.5rem); padding-bottom: clamp(3rem, 6vw, 5.5rem); flex: 1; }
+/* Hero is the shared .practice-hero from css/style.css (same banner as immigration.html); the
+   "Discuss Your Matter" aside is gone, so the grid is a single full-width column. */
+.service-detail-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
 .service-detail-content h2 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.6rem); }
 .service-detail-content p, .service-detail-content li { color: var(--detail-muted); line-height: 1.8; }
 .service-source-content { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--detail-line); }
@@ -38,10 +36,5 @@ body.service-detail-page { margin: 0; color: var(--detail-ink); background: #f8f
 .service-source-content h3, .service-source-content h4, .service-source-content h5 { margin-top: 1.5rem; color: var(--detail-ink); font-family: Georgia, serif; }
 .service-source-label { color: var(--detail-blue) !important; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .service-detail-content ul { padding-left: 1.25rem; }
-.service-detail-aside { align-self: start; padding: 1.5rem; background: #ffffff; border-top: 3px solid var(--detail-blue); box-shadow: 0 12px 30px rgba(24,52,71,.07); }
-.service-detail-hero[data-category="criminal"] + .service-detail-main .service-detail-aside { border-top-color: #8f2938; }
-.service-detail-hero[data-category="real-estate"] + .service-detail-main .service-detail-aside { border-top-color: #317354; }
-.service-detail-aside h2 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: 1.35rem; }
-.service-detail-cta { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 46px; margin-top: 1rem; color: #ffffff; background: var(--detail-ink); font-weight: 800; text-decoration: none; }
 .service-detail-footer { padding: 1.5rem max(1.25rem, 5vw); color: #dbeafe; background: #064767; text-align: center; font-size: .85rem; }
-@media (max-width: 760px) { .service-detail-nav { align-items: flex-start; flex-direction: column; } .service-detail-menu { margin-left: 0; } .service-detail-menu-panel { position: static; grid-template-columns: 1fr; width: 100%; margin-top: .75rem; } .service-detail-menu-panel .bgl-menu-group { padding: .5rem 0; border-right: 0; border-bottom: 1px solid var(--detail-line); } .service-detail-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .service-detail-nav { align-items: flex-start; flex-direction: column; } .service-detail-menu { margin-left: 0; } .service-detail-menu-panel { position: static; grid-template-columns: 1fr; width: 100%; margin-top: .75rem; } .service-detail-menu-panel .bgl-menu-group { padding: .5rem 0; border-right: 0; border-bottom: 1px solid var(--detail-line); } }
