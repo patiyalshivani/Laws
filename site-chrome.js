@@ -114,8 +114,8 @@
                         <a href="mailto:info@bglaws.ca"><i class="fas fa-envelope"></i>info@bglaws.ca</a>
                         <address><i class="fas fa-location-dot"></i><span>81 Zenway Blvd, Unit 2<br>Woodbridge, ON, L4H 0S5</span></address>
                     </div>
-                    <div class="col-md-3"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="laws.html">Services</a><a href="contact.html">Contact</a></div>
-                    <div class="col-md-3"><h3>Our Services</h3><a href="criminal-law.html">Criminal Law</a><a href="immigration.html">Immigration Law</a><a href="real-estate.html">Real Estate Law</a><a href="corporate-law.html">Corporate Law</a></div>
+                    <div class="col-md-3"><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+                    <div class="col-md-3"><h3>Our Services</h3><a href="criminal-law.html">Criminal Law</a><a href="immigration.html">Immigration Law</a><a href="real-estate.html">Real Estate Law</a></div>
                     <div class="col-md-6 text-md-center"><h3>Hours</h3><div class="hours-list"><div><span>Mon</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Tue</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Wed</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Thu</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Fri</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Sat</span><span>By Appointment</span></div><div><span>Sun</span><span>Closed</span></div></div></div>
                 </div>
                 <div class="hl-footer-disclaimer">
