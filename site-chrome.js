@@ -137,6 +137,11 @@
         [menuGroups.immigration, menuGroups.criminal, menuGroups.realEstate].forEach((groups, index) => {
             const dropdown = dropdowns[index];
             if (!dropdown) return;
+            if (groups === menuGroups.criminal) {
+                // Flat list for Criminal Defence: no sub-group headings or nested submenus.
+                dropdown.innerHTML = groups.flatMap(([, items]) => items).map(([name, href]) => `<a href="${href}">${name}</a>`).join('');
+                return;
+            }
             dropdown.classList.add('bgl-category-dropdown');
             dropdown.innerHTML = categoryMarkup(groups);
         });

@@ -8,6 +8,8 @@
     ];
 
     const groupMarkup = (group) => `<div class="bgl-menu-group bgl-menu-${group.className}"><strong>${group.title}</strong>${group.items.map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</div>`;
+    // Criminal Defence is a flat list: ten links, no sub-group headings or nested submenus.
+    const flatMarkup = (group) => group.items.map(([label, href]) => `<a href="${href}">${label}</a>`).join('');
     const categoryMarkup = (group) => {
         const sections = group.className === 'immigration'
             ? [['Temporary Status', 0, 6], ['Permanent Residence & Citizenship', 6, 15], ['Refugee & Protection', 15, 19], ['Litigation & Enforcement', 19, 24]]
@@ -76,6 +78,7 @@
                 const group = href.includes('immigration') ? menuGroups[0] : href.includes('criminal') ? menuGroups[1] : href.includes('real-estate') ? menuGroups[2] : null;
                 const dropdown = item.querySelector('.bgl-dropdown');
                 if (group?.className === 'real-estate') { dropdown?.remove(); item.querySelector('.bgl-service-link i')?.remove(); return; }
+                if (group?.className === 'criminal' && dropdown) { dropdown.innerHTML = flatMarkup(group); dropdown.classList.remove('bgl-category-dropdown'); return; }
                 if (group && dropdown) { dropdown.innerHTML = categoryMarkup(group); dropdown.classList.add('bgl-category-dropdown'); }
             });
         });
