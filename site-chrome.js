@@ -111,6 +111,13 @@
                     <div class="col-md-3"><h3>Our Services</h3><a href="criminal-law.html">Criminal Law</a><a href="immigration.html">Immigration Law</a><a href="real-estate.html">Real Estate Law</a><a href="corporate-law.html">Corporate Law</a></div>
                     <div class="col-md-6 text-md-center"><h3>Hours</h3><div class="hours-list"><div><span>Mon</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Tue</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Wed</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Thu</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Fri</span><span>09:00 a.m. - 05:00 p.m.</span></div><div><span>Sat</span><span>By Appointment</span></div><div><span>Sun</span><span>Closed</span></div></div></div>
                 </div>
+                <div class="hl-footer-disclaimer">
+                    <h3>Disclaimer</h3>
+                    <p>The information provided on this website is for general informational purposes only and should not be relied upon as legal advice. Viewing or using this website does not create a lawyer-client relationship with BG Laws.</p>
+                    <p>No information contained on this website, or provided through emails, messages, or other correspondence from BG Laws, constitutes legal advice unless the advice is provided by a lawyer during a formal consultation or pursuant to a valid retainer agreement.</p>
+                    <p>BG Laws disclaims liability for any loss or consequence arising from reliance on general information provided through this website or related communications.</p>
+                    <p>You should obtain legal advice from a qualified lawyer regarding your specific circumstances before making any legal decision or taking any action based on information found on this website.</p>
+                </div>
                 <div class="hl-footer-bottom">Copyright &copy; 2026 BG Laws. All Rights Reserved.</div>
             </div>
         </footer>`;
