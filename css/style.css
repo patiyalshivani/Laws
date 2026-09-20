@@ -5779,7 +5779,7 @@ body {
 
 .hl-footer .row {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1.3fr 0.9fr 0.9fr 1.3fr;
     gap: 2.5rem 3rem;
     margin: 0;
 }
@@ -5822,11 +5822,22 @@ body {
 
 .hl-footer .hours-list div span:last-child {
     color: #ffffff;
+    white-space: nowrap;
 }
 
 .hl-footer-bottom {
     margin-top: 2.5rem;
     padding: 1.1rem 0 0;
+}
+
+@media (max-width: 991.98px) {
+    .hl-footer .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hl-footer .hl-footer-brand {
+        grid-column: 1 / -1;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -5922,4 +5933,43 @@ body {
 
 .hl-footer-bottom {
     margin-top: 1.75rem;
+}
+
+/* Footer brand / contact column (first of four). */
+.hl-footer-brand .hl-footer-logo {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+    opacity: 0.92;
+}
+
+.hl-footer-brand p {
+    max-width: 30ch;
+    margin-bottom: 1.1rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.hl-footer-brand a,
+.hl-footer-brand address {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 0.55rem;
+    color: #dbeafe;
+    font-size: 0.9rem;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.hl-footer-brand a i,
+.hl-footer-brand address i {
+    flex: 0 0 auto;
+    width: 1rem;
+    margin-top: 0.3rem;
+    color: rgba(219, 234, 254, 0.72);
+    font-size: 0.8rem;
+    text-align: center;
 }
