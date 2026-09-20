@@ -5453,13 +5453,13 @@ body {
     text-decoration: underline;
 }
 
-.practice-page .breadcrumb {
+:is(.practice-page, .service-detail-page) .breadcrumb {
     background: #ffffff !important;
     border-bottom: 1px solid var(--practice-line);
     padding: 0.85rem 0;
 }
 
-.practice-page .breadcrumb a {
+:is(.practice-page, .service-detail-page) .breadcrumb a {
     color: var(--practice-muted);
     text-decoration: none;
 }
@@ -5558,6 +5558,15 @@ body {
     background: #ffffff;
 }
 
+/* .page-header * (top of file) forces color: #fff !important on everything in a
+   banner. That made the outline button's hover -- white fill, ink text -- render
+   white-on-white on every practice and service page. Out-specify it. */
+.page-header .practice-button-secondary:hover,
+.page-header .practice-button-light,
+.page-header .practice-button-light:hover {
+    color: var(--practice-ink) !important;
+}
+
 .practice-button-light {
     color: var(--practice-ink);
     background: #ffffff;
@@ -5578,7 +5587,7 @@ body {
     scroll-margin-top: 2rem;
 }
 
-.practice-page .page-header+section,
+.practice-page .page-header+section:not(.urgent-consultation),
 .practice-page .urgent-consultation+section {
     background: #f8fafb;
 }
@@ -5825,4 +5834,67 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+}
+
+/* ===========================
+   Header: About Us / language swap
+   =========================== */
+/* "About Us" moved from the dark top bar into the white main header, and the
+   Google Translate widget moved the other way. Each needs styling for its new
+   background: the link was white-on-dark, the widget was sized for the taller
+   main header. */
+.bgl-about-link {
+    color: #064767;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.bgl-about-link:hover {
+    color: #0075c1;
+}
+
+.bgl-topbar .translate-widget {
+    min-width: 0;
+}
+
+.bgl-topbar .translate-widget .goog-te-gadget-simple {
+    min-height: 30px;
+    padding: 0.2rem 0.7rem;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.bgl-topbar .translate-widget .goog-te-gadget-simple span {
+    font-size: 0.85rem;
+}
+
+/* ===========================
+   Practice Areas page
+   =========================== */
+/* The three category cards used bg-info / bg-danger / bg-success, which the
+   theme override maps to two different blues plus Bootstrap cyan. Use the
+   banner colour for all three so they read as a set. */
+.law-category-head {
+    background: #064767;
+}
+
+.page-header-copy {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 1rem 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Practice pages: section headings and feature icons use the banner's dark blue
+   rather than Bootstrap cyan (.text-info) or the bright blue .text-danger /
+   .text-success are remapped to. */
+.immigration-page .text-info,
+.criminal-page .text-danger,
+.real-estate-page .text-success {
+    color: #064767 !important;
 }
