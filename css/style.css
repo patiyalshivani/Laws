@@ -65,6 +65,7 @@ body {
 .bg-success,
 .bg-danger,
 .bg-warning,
+.bg-info,
 .btn-primary,
 .btn-success,
 .btn-danger,
@@ -72,7 +73,8 @@ body {
 .badge.bg-primary,
 .badge.bg-success,
 .badge.bg-danger,
-.badge.bg-warning {
+.badge.bg-warning,
+.badge.bg-info {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
     color: #ffffff !important;
@@ -5972,4 +5974,19 @@ body {
     color: rgba(219, 234, 254, 0.72);
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* "Free Initial Consultation" card on the practice pages: banner blue, white text
+   (was Bootstrap cyan with the heading falling back to dark ink). */
+.practice-cta-card {
+    background: #064767;
+    color: #ffffff;
+}
+
+.practice-cta-card .card-title {
+    color: #ffffff;
+}
+
+.practice-cta-card .card-text {
+    color: rgba(255, 255, 255, 0.85);
 }
