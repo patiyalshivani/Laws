@@ -5782,7 +5782,7 @@ body {
 
 .hl-footer .row {
     display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.9fr 1.3fr;
+    grid-template-columns: 1.2fr 0.85fr 0.85fr 1.5fr;
     gap: 2.5rem 3rem;
     margin: 0;
 }
@@ -5815,7 +5815,7 @@ body {
 }
 
 .hl-footer .hours-list div {
-    grid-template-columns: 2.75rem minmax(0, 1fr);
+    grid-template-columns: 6.5rem minmax(0, 1fr);
     gap: 0.75rem;
 }
 
