@@ -10,7 +10,7 @@
 
 :root {
     /* Modern Color Palette */
-    --primary-color: rgba(0, 117, 193, 0.9);
+    --primary-color: #064767;
     --primary-dark: #0064a5;
     --primary-light: rgba(0, 117, 193, 0.14);
     --secondary-color: #6c757d;
@@ -100,6 +100,7 @@ body {
 .text-success,
 .text-danger,
 .text-warning,
+.text-info,
 .link-primary {
     color: var(--primary-color) !important;
 }
@@ -1890,7 +1891,7 @@ body {
     --brand-navy: rgba(0, 117, 193, 0.9);
     --brand-blue: rgba(0, 117, 193, 0.9);
     --brand-sky: rgba(0, 117, 193, 0.9);
-    --brand-gold: rgba(0, 117, 193, 0.9);
+    --brand-gold: #064767;
     --brand-ink: #111827;
     --banner-bg: #ffffff;
 }
@@ -2071,7 +2072,7 @@ body {
 
 .bgl-service-item:hover .bgl-service-link,
 .bgl-service-link:focus {
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     color: #fff;
     border-color: transparent;
 }
@@ -2267,7 +2268,7 @@ body {
     right: 0;
     bottom: 12px;
     height: 2px;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.2s ease;
@@ -2476,7 +2477,7 @@ body {
     right: 0;
     bottom: 14px;
     height: 2px;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     transform: scaleX(0);
     transition: transform 0.2s ease;
 }
@@ -2578,7 +2579,7 @@ body {
     width: 34px;
     height: 3px;
     border-radius: 999px;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
 }
 
 .sample-hero-title {
@@ -2624,7 +2625,7 @@ body {
 }
 
 .sample-primary-btn {
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     color: #ffffff;
     box-shadow: 0 14px 28px rgba(0, 117, 193, 0.24);
 }
@@ -2671,7 +2672,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     color: #ffffff;
 }
 
@@ -2713,7 +2714,7 @@ body {
 }
 
 .sample-blue-band {
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     color: #ffffff;
     padding: clamp(3rem, 5vw, 4.5rem) 0;
 }
@@ -2871,7 +2872,7 @@ body {
     height: 44px;
     margin-bottom: 1.2rem;
     color: #ffffff;
-    background: rgba(0, 117, 193, 0.95);
+    background: #064767;
     border-radius: 12px;
     font-weight: 800;
 }
@@ -3073,7 +3074,7 @@ body {
 
 .home1-page .practice-focus-icon {
     color: #ffffff;
-    background: #0075c1;
+    background: #064767;
 }
 
 .home1-page .practice-focus-label {
@@ -3327,7 +3328,7 @@ body {
     content: '';
     width: 42px;
     height: 2px;
-    background: rgba(0, 117, 193, 0.95);
+    background: #064767;
 }
 
 .practice-focus-title {
@@ -3389,7 +3390,7 @@ body {
     justify-content: center;
     margin-bottom: 1.25rem;
     color: #ffffff;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
     border-radius: 8px;
     font-size: 1.2rem;
 }
@@ -3700,7 +3701,7 @@ body {
     min-height: 38px;
     padding: 0 1rem;
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
     border: 0;
     border-radius: 999px;
     font-size: 0.76rem;
@@ -3858,7 +3859,7 @@ body {
     display: grid;
     place-items: center;
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
     border-radius: 50%;
     font-size: 0.78rem;
 }
@@ -3912,7 +3913,7 @@ body {
     justify-content: center;
     padding: 1rem;
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
 }
 
 .home1-page .hl-strip-grid img {
@@ -3974,7 +3975,7 @@ body {
     place-items: center;
     margin: 0 auto 0.8rem;
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
     border-radius: 50%;
 }
 
@@ -4162,7 +4163,7 @@ body {
 
 .home1-page .hl-review-nav:not(:disabled):hover {
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
     transform: translateY(-2px);
 }
 
@@ -4337,7 +4338,7 @@ body {
     min-height: 38px;
     margin-top: 0.85rem;
     color: #ffffff;
-    background: var(--hl-blue);
+    background: #064767;
     border: 0;
     border-radius: 2px;
     font-size: 0.78rem;
@@ -5616,7 +5617,7 @@ body {
 
 .urgent-consultation {
     color: #ffffff;
-    background: rgba(0, 117, 193, 0.9);
+    background: #064767;
 }
 
 .urgent-consultation .container {
@@ -5989,4 +5990,60 @@ body {
 
 .practice-cta-card .card-text {
     color: rgba(255, 255, 255, 0.85);
+}
+
+/* The home hero kicker sits on the dark banner, where the blue accent is close to
+   unreadable; use the same light tint as the practice-page eyebrow. */
+.home1-page .hl-hero .hl-kicker {
+    color: #9ed2ea;
+}
+
+/* Immigration page: the dropdown's services, laid out as four groups. */
+.imm-service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.imm-service-group {
+    padding: 1.25rem 1.35rem;
+    background: #ffffff;
+    border: 1px solid var(--practice-line);
+    border-radius: 6px;
+}
+
+.imm-service-group h3 {
+    margin: 0 0 0.75rem;
+    color: #064767;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.imm-service-group a {
+    display: block;
+    padding: 0.3rem 0;
+    color: var(--practice-ink);
+    font-size: 0.88rem;
+    line-height: 1.45;
+    text-decoration: none;
+}
+
+.imm-service-group a:hover {
+    color: #064767;
+    text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+    .imm-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .imm-service-grid {
+        grid-template-columns: 1fr;
+    }
 }
