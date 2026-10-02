@@ -5780,11 +5780,33 @@ body {
     padding: clamp(3rem, 5vw, 4.5rem) 0 1.25rem;
 }
 
+/* Three columns: brand | Quick Links over Our Services | Hours, so Hours gets
+   the width the two stacked link lists free up. */
 .hl-footer .row {
     display: grid;
-    grid-template-columns: 1.2fr 0.85fr 0.85fr 1.5fr;
-    gap: 2.5rem 3rem;
+    grid-template-columns: 1.15fr 0.8fr 1.5fr;
+    gap: 2rem 3rem;
     margin: 0;
+}
+
+.hl-footer .row > :nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.hl-footer .row > :nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.hl-footer .row > :nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.hl-footer .row > :nth-child(4) {
+    grid-column: 3;
+    grid-row: 1 / span 2;
 }
 
 .hl-footer .row > [class*="col-"] {
@@ -5838,7 +5860,13 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    .hl-footer .hl-footer-brand {
+    .hl-footer .row > :nth-child(n) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* out-specify the :nth-child reset above */
+    .hl-footer .row > .hl-footer-brand {
         grid-column: 1 / -1;
     }
 }
