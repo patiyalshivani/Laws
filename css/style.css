@@ -5844,6 +5844,15 @@ body {
     margin-bottom: 0;
 }
 
+@media (min-width: 992px) {
+    .lawyer-photo img {
+        height: auto;
+        max-height: none;
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 991.98px) {
     .lawyer-photo img {
         max-height: 340px;
