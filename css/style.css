@@ -5816,6 +5816,7 @@ body {
     margin: 0 0 1.5rem;
     color: #66737b;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .about-lawyer-title::after {
@@ -5837,6 +5838,7 @@ body {
 .about-lawyer-profile .col-lg-8 > p {
     color: #66737b;
     font-size: 0.93rem;
+    font-weight: 600;
     line-height: 1.75;
 }
 
